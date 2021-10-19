@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Marcelo",
+    "email": "Marcelo@gmail.com",
+    "contrasenia": "$2a$10$7wyALwQBPThWc8n2MaQMaeoHYn3rSNyToBfM8aQ/FataCk1coQoJO",
+    "genero": "m",
+    "hobbies": [],
+    "rol": "admin"
+  },
+  {
+    "id": 2,
+    "nombre": "Gabriel",
+    "email": "batistuta9.gb@gmail.com",
+    "contrasenia": "$2a$10$k2L9Au1sDVKad/yJrct1QelZdMZQ4tBzRvvOxLGANAPLyBqU1UKpO",
+    "genero": "m",
+    "hobbies": [],
+    "rol": "user"
+  }
+]

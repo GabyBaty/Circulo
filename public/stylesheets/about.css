@@ -1,0 +1,42 @@
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.containter3 {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+.containers3 {
+    margin-top: 5rem;
+    display: flex;
+    margin: 5rem;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+.containers3 h2 {
+    margin-bottom: 20px;
+}
+
+.sub_containerB1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.sub_containerB1sub {
+    display: flex;
+    flex-direction: column;
+
+}

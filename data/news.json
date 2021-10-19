@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "name": "primera noticia",
+        "date": "1/10/2021",
+        "articulo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        
+        
+    },
+    {
+        "id":2,
+        "name": "segunda noticia",
+        "date": "1/10/2021",
+        "articulo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        
+    },
+    {
+        "id":3,
+        "name": "tercera noticia",
+        "date": "1/10/2021",
+        "articulo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        
+        
+    },
+    {
+        "id":4,
+        "name": "cuarta noticia",
+        "date": "1/10/2021",
+        "articulo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        
+    },
+    {
+        "id":5,
+        "name": "quinta noticia",
+        "date": "1/10/2021",
+        "articulo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        
+    }
+]
