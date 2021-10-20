@@ -47,4 +47,19 @@ module.exports = {
             title: 'CIRCULO-EVACUACION'
         })
     },
+    sorteos:(req,res)=> {
+        return res.render ('sorteos',{
+            title: 'CIRCULO-SORTEOS'
+        })
+    },
+    formulario:(req,res)=> {
+        return res.render ('formularioEj',{
+            title: 'CIRCULO-FORMULARIO'
+        })
+    },
+    formularios:(req,res)=> {
+        return res.render ('formularios',{
+            title: 'CIRCULO-FORMULARIOS'
+        })
+    }
 }
