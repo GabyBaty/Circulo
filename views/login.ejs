@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="login-cart">
-        <a href="/login"><i class="fas fa-user"></i> Login</a>
+        <a href="/users/login"><i class="fas fa-user"></i> Login</a>
         <a href="/users/register"><i class="fas fa-user"></i> Registro</a>
       </div>
       <div class="header-nav-links">
@@ -56,6 +56,13 @@
               <ul>
                 <li class="dropdown-link" >
                   <a href="#" class="header-dropdown-content">Alojamiento</a>
+                  <div class="dropdown header-dropdown-secondary hidden">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="/reservas">Reservas</a>
+                      </li>
+                    </ul>
+                  </div>     
                 </li>
                 <li class="dropdown-link">
                   <a href="/wellness" class="header-dropdown-content">Bienestar Social</a>
@@ -90,12 +97,19 @@
                 </li>
                 <li class="dropdown-link">
                   <a href="#" class="header-dropdown-content">Turismo</a>
+                  <div class="dropdown header-dropdown-secondary hidden">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="/tour">Reservas</a>
+                      </li>
+                    </ul>
+                  </div>     
                 </li>
               </ul>
             </div>
           </li>
           <li class="header-nav-link">
-            <a href="#" class="header-dropdown-content"> Beneficios<!-- <i class="fas fa-caret-down"></i> --></a>
+            <a href="#" class="header-dropdown-content"> Beneficios</a>
             <div class="dropdown hidden">
               <ul>
                 <li class="dropdown-link">
@@ -115,7 +129,7 @@
                   </div>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="header-dropdown-content">Sorteos</a>
+                  <a href="/sorteos" class="header-dropdown-content">Sorteos</a>
                 </li>
               </ul>
             </div>
@@ -125,9 +139,19 @@
           </li>
           <li class="header-nav-link">
             <a href="#">Quiénes somos</a>
+            <div class="dropdown hidden">
+              <ul>
+                <li class="dropdown-link">
+                  <a href="/about#institucional" class="header-dropdown-content">Institucional</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="/about#autoridades" class="header-dropdown-content">Autoridades</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="header-nav-link">
-            <a href="#">Contacto</a>
+            <a href="/contactos">Contactos</a>
           </li>
         </ul>
       </div>
@@ -139,7 +163,7 @@
       </div>
     </div>
   </div>
-   </header>
+</header>
   <div class="login">
     <main class="container">
         <div class="row">
@@ -204,22 +228,6 @@
             </p>
             <p>
               <a href="#!" class="text-reset">Productos</a>
-            </p>
-          </div>
-          <!-- Grid column end-->
-
-          <!-- Grid column start-->
-          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h5 class="text-uppercase fw-bold mb-4 pt-3">Cuenta</h5>
-            <p>
-              <a href="/login" class="text-reset">Mi cuenta</a>
-            </p>
-            <p>
-              <a href="/productCart" class="text-reset">Carrito</a>
-            </p>
-            <p>
-              <a href="/productCart" class="text-reset">Finalizar compra</a>
             </p>
           </div>
           <!-- Grid column end-->

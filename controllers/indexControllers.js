@@ -7,9 +7,9 @@ module.exports = {
             title: 'CIRCULO-ABOUT',
         })
     },
-    contacto:(req,res)=>{
-        return res.render('contacto', {
-            title: 'CIRCULO-CONTACTO',
+    contactos:(req,res)=>{
+        return res.render('contactos', {
+            title: 'CIRCULO-CONTACTOS',
         })
     },
     filiales:(req,res)=> {
@@ -30,6 +30,21 @@ module.exports = {
     tour:(req,res)=> {
         return res.render ('tours',{
             title: 'CIRCULO-TURISMO'
+        })
+    },
+    sortea2:(req,res)=> {
+        return res.render ('sortea2',{
+            title: 'CIRCULO-SORTEOS'
+        })
+    },
+    formulario:(req,res)=> {
+        return res.render ('formularioEj',{
+            title: 'CIRCULO-FORMULARIO'
+        })
+    },
+    formularios:(req,res)=> {
+        return res.render ('formularios',{
+            title: 'CIRCULO-FORMULARIOS'
         })
     }
 
