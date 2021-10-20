@@ -11,6 +11,9 @@ var filialesRouter = require('./routes/filiales');
 var bienestarRouter = require('./routes/bienestar');
 var reservaRouter= require('./routes/reserva');
 var tourRouter= require('./routes/tour');
+var farmaciaRouter=require('./routes/farmacia');
+var delegadoRouter=require('./routes/delegado');
+var evacuationRouter=require('./routes/evacuation');
 
 
 var app = express();
@@ -32,6 +35,9 @@ app.use('/filial',filialesRouter);
 app.use('/wellness',bienestarRouter);
 app.use('/reservas',reservaRouter);
 app.use('/tour', tourRouter);
+app.use('/farmacias',farmaciaRouter);
+app.use('/delegados',delegadoRouter);
+app.use('/evacuacion',evacuationRouter);
 
 
 // catch 404 and forward to error handler

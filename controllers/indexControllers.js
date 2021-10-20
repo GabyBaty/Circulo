@@ -32,4 +32,19 @@ module.exports = {
             title: 'CIRCULO-TURISMO'
         })
     },
+    farmacia:(req,res)=> {
+        return res.render ('farmacias',{
+            title: 'CIRCULO-FARMACIAS'
+        })
+    },
+    delegado:(req,res)=> {
+        return res.render ('delegados',{
+            title: 'CIRCULO-DELEGADOS'
+        })
+    },
+    evacuation:(req,res)=> {
+        return res.render ('evacuacion',{
+            title: 'CIRCULO-EVACUACION'
+        })
+    },
 }
