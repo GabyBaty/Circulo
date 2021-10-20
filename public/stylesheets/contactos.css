@@ -1,0 +1,9 @@
+.contactos .container .card h3{
+    color: #32A455
+}
+.contactos .container .card h3:hover{
+    color:#006400
+}
+.contactos .container .card a:hover{
+    color:#32A455
+}
