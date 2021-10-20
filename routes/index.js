@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 /* router.get('/', index); */
 router.get('/about', about);
-router.get('/contacto', contacto);
+router.get('/contactos', contacto);
 router.get('/filial',filiales);
 router.get('/wellness',bienestar);
 router.get('/reservas',reserva);

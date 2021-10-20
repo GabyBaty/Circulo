@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIRCULO-ABOUT</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CIRCULO-INDEX</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!--     SLICK -->
+    <link rel="stylesheet" href="/stylesheets/slick.css" />
+    <!--ESTILOS -->
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <!--  FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--    HEADER -->
 
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-  <!--     SLICK -->
-  <link rel="stylesheet" href="/stylesheets/slick.css" />
-  <!--ESTILOS -->
-  <link rel="stylesheet" href="/stylesheets/styles.css" />
-  <!--  FONTAWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
-</head>
-
-<body>
-
-  <!--    HEADER -->
-
-  <header>
-    <div class="header-container">
-      <div class="logo-container">
-        <a href="/"><img class="img-fluid" src="/images/logo.png" alt="logo-img" /></a>
-      </div>
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="/"
+            ><img class="img-fluid" src="/images/logo.png" alt="logo-img"
+          /></a>
+        </div>
       <div class="nav-btn">
         <div class="search-input">
           <div class="input-group">
@@ -45,12 +52,10 @@
         <div class="header-nav-links">
           <ul>
             <li class="header-nav-link">
-              <a href="#" class="header-dropdown-content">Servicios
-                <!-- <i class="fas fa-caret-down"></i> -->
-              </a>
+              <a href="#" class="header-dropdown-content">Servicios <!-- <i class="fas fa-caret-down"></i> --></a>
               <div class="dropdown hidden">
                 <ul>
-                  <li class="dropdown-link">
+                  <li class="dropdown-link" >
                     <a href="#" class="header-dropdown-content">Alojamiento</a>
                     <div class="dropdown header-dropdown-secondary hidden">
                       <ul>
@@ -58,7 +63,7 @@
                           <a href="/reservas">Reservas</a>
                         </li>
                       </ul>
-                    </div>
+                    </div>     
                   </li>
                   <li class="dropdown-link">
                     <a href="/wellness" class="header-dropdown-content">Bienestar Social</a>
@@ -89,7 +94,7 @@
                     </div>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#" class="header-dropdown-content">Evacuación</a>
+                    <a href="/evacuacion" class="header-dropdown-content">Evacuación</a>
                   </li>
                   <li class="dropdown-link">
                     <a href="#" class="header-dropdown-content">Turismo</a>
@@ -99,7 +104,7 @@
                           <a href="/tour">Reservas</a>
                         </li>
                       </ul>
-                    </div>
+                    </div>     
                   </li>
                 </ul>
               </div>
@@ -113,13 +118,13 @@
                     <div class="dropdown header-dropdown-secondary hidden">
                       <ul>
                         <li class="dropdown-link">
-                          <a href="#">Locales</a>
+                          <a href="/farmacias/#locales">Locales</a>
                         </li>
                         <li class="dropdown-link">
                           <a href="https://www.farmacity.com/Farmacity/sucursales">Farmacity</a>
                         </li>
                         <li class="dropdown-link">
-                          <a href="#">Cobertura</a>
+                          <a href="/farmacias/#cobertura">Cobertura</a>
                         </li>
                       </ul>
                     </div>
@@ -134,7 +139,7 @@
               <a href="/filial/" class="header-dropdown-content">Filiales</a>
             </li>
             <li class="header-nav-link">
-              <a href="#">Quiénes somos</a>
+              <a href="/about">Quiénes somos</a>
               <div class="dropdown hidden">
                 <ul>
                   <li class="dropdown-link">
@@ -342,45 +347,61 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-
-  <footer class="text-center text-lg-start bg-light text-muted">
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Links  start-->
     <section class="footer-container">
       <div class="container text-md-start mt-5">
         <!-- Grid row start-->
         <div class="row mt-3">
           <!-- Grid column start-->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h5 class="text-uppercase fw-bold mb-4 pt-3">Contacto</h5>
-            <p><i class="fas fa-home me-2"></i> Sede Central Hotel Tacuarí Calle Tacuarí 566 CP.1071 C.A.B.A</p>
+            <p><i class="fas fa-home me-2"></i> Sede Central Hotel Tacuarí <br>Calle Tacuarí 566 CP.1071 C.A.B.A</p>
             <p><i class="fas fa-envelope me-2"></i>administraciontacuari@cirsubgn.org</p>
             <p><i class="fas fa-phone me-2"></i> + 011 555 5555</p>
           </div>
           <!-- Grid column end-->
           <!-- Grid column start-->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h5 class="text-uppercase fw-bold mb-4 pt-3">Información</h5>
             <p>
-              <a href="#!" class="text-reset">¿Quiénes somos?</a>
+              <a href="/about" class="text-reset">¿Quiénes somos?</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Institucional</a>
+              <a href="/about/#institucional" class="text-reset">Institucional</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Autoridades</a>
+              <a href="/about/#autoridades" class="text-reset">Autoridades</a>
             </p>
           </div>
           <!-- Grid column end-->
 
           <!-- Grid column start-->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 social-media-icons">
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4 pt-3">Acceso Rápido</h5>
+            <p>
+              <a href="/farmacias" class="text-reset">Farmacias</a>
+            </p>
+            <p>
+              <a href="/reservas" class="text-reset">Alojamiento</a>
+            </p>
+            <p>
+              <a href="/wellness" class="text-reset">Bienestar</a>
+            </p>
+          </div>
+          <!-- Grid column end-->
+
+          <!-- Grid column start-->
+          <div
+            class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 social-media-icons"
+          >
             <!-- Links -->
             <h5 class="text-uppercase fw-bold mb-4 pt-3">Seguinos en</h5>
-            <a href="https://www.facebook.com/Mutual-Circulo-de-Suboficiales-de-Gendarmer%C3%ADa-Nacional-103538817800030"
-              class="me-4 text-reset">
+            <a href="https://www.facebook.com/Mutual-Circulo-de-Suboficiales-de-Gendarmer%C3%ADa-Nacional-103538817800030" class="me-4 text-reset">
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://twitter.com/mutualcirsub" class="me-4 text-reset">
@@ -398,10 +419,14 @@
     <!-- Section: Links end -->
     <!-- Copyright -->
     <div class="text-center p-4 copyright-footer">
-      <small>Circulo de Sub Oficiales de Gendarmeria Nacional &copy;
-        2021.</small>
+      <small
+      >Circulo de Sub Oficiales de Gendarmeria Nacional &copy;
+      2021.</small
+    >
     </div>
+    <!-- Copyright -->
   </footer>
+  <!-- Footer -->
 
   <!-- SCRIPTS -->
   <script src="/js/dropdowns.js"></script>
@@ -412,9 +437,12 @@
   <!-- SLICK -->
   <script src="/js/slick.js"></script>
   <!-- BOOTSTRAP -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
+  <!-- Código de instalación Cliengo para batistuta9.gb@gmail.com -->
+   <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
 </body>
-
 </html>

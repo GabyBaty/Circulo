@@ -8,7 +8,7 @@ module.exports = {
         })
     },
     contacto:(req,res)=>{
-        return res.render('contacto', {
+        return res.render('contactos', {
             title: 'CIRCULO-CONTACTO',
         })
     },

@@ -14,6 +14,8 @@ var tourRouter= require('./routes/tour');
 var farmaciaRouter=require('./routes/farmacia');
 var delegadoRouter=require('./routes/delegado');
 var evacuationRouter=require('./routes/evacuation');
+var contactoRouter=require('./routes/contacto');
+
 
 
 var app = express();
@@ -38,6 +40,7 @@ app.use('/tour', tourRouter);
 app.use('/farmacias',farmaciaRouter);
 app.use('/delegados',delegadoRouter);
 app.use('/evacuacion',evacuationRouter);
+app.use('/contactos',contactoRouter);
 
 
 // catch 404 and forward to error handler
