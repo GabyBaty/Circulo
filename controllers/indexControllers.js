@@ -31,6 +31,5 @@ module.exports = {
         return res.render ('tours',{
             title: 'CIRCULO-TURISMO'
         })
-    }
-
+    },
 }

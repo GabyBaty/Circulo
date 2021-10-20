@@ -14,4 +14,5 @@ router.get('/wellness',bienestar);
 router.get('/reservas',reserva);
 router.get('/tours',tour);
 
+
 module.exports = router;

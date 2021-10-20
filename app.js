@@ -12,6 +12,7 @@ var bienestarRouter = require('./routes/bienestar');
 var reservaRouter= require('./routes/reserva');
 var tourRouter= require('./routes/tour');
 
+
 var app = express();
 
 // view engine setup
@@ -31,6 +32,7 @@ app.use('/filial',filialesRouter);
 app.use('/wellness',bienestarRouter);
 app.use('/reservas',reservaRouter);
 app.use('/tour', tourRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

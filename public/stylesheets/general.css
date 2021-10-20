@@ -269,6 +269,31 @@
     transform: translateY(0) rotate(45deg);
   }
   
+
+  .whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+    
+  }
+
+  .card-asociate{
+    display: flex;
+    justify-content: space-between;
+  }
+
   @media (max-width: 900px) {
     .hamburger-menu-container {
       display: flex;
