@@ -7,9 +7,9 @@ module.exports = {
             title: 'CIRCULO-ABOUT',
         })
     },
-    contactos:(req,res)=>{
+    contacto:(req,res)=>{
         return res.render('contactos', {
-            title: 'CIRCULO-CONTACTOS',
+            title: 'CIRCULO-CONTACTO',
         })
     },
     filiales:(req,res)=> {
@@ -32,8 +32,23 @@ module.exports = {
             title: 'CIRCULO-TURISMO'
         })
     },
-    sortea2:(req,res)=> {
-        return res.render ('sortea2',{
+    farmacia:(req,res)=> {
+        return res.render ('farmacias',{
+            title: 'CIRCULO-FARMACIAS'
+        })
+    },
+    delegado:(req,res)=> {
+        return res.render ('delegados',{
+            title: 'CIRCULO-DELEGADOS'
+        })
+    },
+    evacuation:(req,res)=> {
+        return res.render ('evacuacion',{
+            title: 'CIRCULO-EVACUACION'
+        })
+    },
+    sorteos:(req,res)=> {
+        return res.render ('sorteos',{
             title: 'CIRCULO-SORTEOS'
         })
     },
@@ -46,6 +61,13 @@ module.exports = {
         return res.render ('formularios',{
             title: 'CIRCULO-FORMULARIOS'
         })
-    }
-
+    },
+    news : (req,res) => {   
+        return res.render('new',{ 
+            title: 'CIRCULO-NOTICIAS',
+            noticias
+        })     
+        
+    },
+   
 }

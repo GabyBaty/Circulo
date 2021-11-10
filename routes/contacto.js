@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const {bienestar} = require('../controllers/bienestarControllers');
+const {contacto} = require('../controllers/contactosControllers');
 
 /* GET bienestar page. */
-router.get('/wellness',bienestar);
+router.get('/contactos',contacto);
 
 
 module.exports = router;
