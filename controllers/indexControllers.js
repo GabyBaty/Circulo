@@ -61,5 +61,13 @@ module.exports = {
         return res.render ('formularios',{
             title: 'CIRCULO-FORMULARIOS'
         })
-    }
+    },
+    news : (req,res) => {   
+        return res.render('new',{ 
+            title: 'CIRCULO-NOTICIAS',
+            noticias
+        })     
+        
+    },
+   
 }
