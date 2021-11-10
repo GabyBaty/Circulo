@@ -3,7 +3,7 @@
         "id":1,
         "name": "Elecciones Generales para Delegados y Subdelegados",
         "date": "12/10/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"elecciones2021.png"
         
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name": "Solicite ahora su Ayuda Económica",
         "date": "12/10/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"Ayuda-economica.png"
 
     },
@@ -19,7 +19,7 @@
         "id":3,
         "name": "Remodelación del EDIFICIO HOTEL TACUARÍ",
         "date": "27/09/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"remodelacion.png"
         
         
@@ -28,7 +28,7 @@
         "id":4,
         "name": "Asamblea Ordinaria de Delegados",
         "date": "23/09/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"noticia1.jpg"
         
     },
@@ -36,7 +36,7 @@
         "id":5,
         "name": "Apoyo del Círculo de Suboficiales a un socio que competirá en Japón",
         "date": "25/08/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"noticia2.jpg"
         
     },
@@ -44,7 +44,7 @@
         "id":6,
         "name": "Reencuentro en Sede Central",
         "date": "09/08/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"noticia3.jpg"
         
         
@@ -53,7 +53,7 @@
         "id":7,
         "name": "Vacaciones de invierno en Córdoba",
         "date": "27/07/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"vacaciones.png"
         
     },
@@ -61,7 +61,7 @@
         "id":8,
         "name": "Alojamiento Sede Central",
         "date": "08/03/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"noticia3.jpg"
         
     },
@@ -69,7 +69,7 @@
         "id":9,
         "name": "Trabajo de prevención tras el sismo en San Juan",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"sismoSanJuan.png"
         
         
@@ -78,7 +78,7 @@
         "id":10,
         "name": "Detienen a joven que viajaba con un arma de fuego casera",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"Detencion.png"
         
     },
@@ -86,7 +86,7 @@
         "id":11,
         "name": "Secuestran casi 4 toneladas de marihuana abandonada entre la maleza",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"marihuana.png"
         
     },
@@ -94,7 +94,7 @@
         "id":12,
         "name": "Reparación del frente del Edificio Sede Central",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"noticia3.jpg"
         
         
@@ -103,7 +103,7 @@
         "id":13,
         "name": "Hospedaje para la temporada 2020/2021 en Mar del Plata",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"hospedajeMP2021.png"
         
     },
@@ -111,7 +111,7 @@
         "id":14,
         "name": "Nos equipamos para recibirlos pronto",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"equipocovid.png"
         
     },
@@ -119,7 +119,7 @@
         "id":15,
         "name": "Trasladaba 7 kilos de cocaína en el tanque de nafta",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"cocaina.png"
         
         
@@ -128,14 +128,14 @@
         "id":16,
         "name": "Detienen a clan familiar con toneladas de droga",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"clanfamiliar.png"
     },
     {
         "id":17,
         "name": "Donación de ropa y alimentos en Formosa",
         "date": "01/02/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"donacion.png"
         
     },
@@ -143,7 +143,7 @@
         "id":18,
         "name": "Miles de dólares y celulares",
         "date": "09/09/2021",
-        "articulo":"por Martín Nahuel Pianelli",
+        "autor":"por Martín Nahuel Pianelli",
         "images":"dolaresycelulares.png"
         
         

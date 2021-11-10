@@ -166,19 +166,20 @@
     </header>
   <main>
 
-    <div class="container d-flex flex-wrap">
-      
-         <div class="col-12 col-sm-6 col-lg-3">
-         <div class="card mt-5 " style="width: 25rem;height: 40rem;">
-           <img src="/images/new/<%= detailNoticia.images %>" class="card-img-top" style="height: 15rem;" alt="...">
-           <div class="card-body">
-             <h3 class="card-title" ><%= detailNoticia.name %></h3>
-             <h5 class="card-title" ><%= detailNoticia.date %></h5>
-            
+    <div class="text-center d-flex" style="justify-content: center;">
+    
+       <div class="col-6 ">
+       <div class="mt-5" style="width: auto;">
+         <img src="/images/new/<%= noticia.images %>" class="card-img-top"  alt="...">
+         <div class="card mt-5 " style="width: 100%;height: 100%;">
+           <h3 class="card-title" ><%= noticia.name %></h3>
+           <h5 class="card-title" style="font-size: medium;" ><%= noticia.date %></h5>
+           <p class="card-text p-4"style="font-size:1.4rem; white-space:pre-wrap;"><%= noticia.articulo.p[0] %></p>
+           
          </div>
        </div>
-        
-      
+     </div>
+    </div> 
       
 
 
