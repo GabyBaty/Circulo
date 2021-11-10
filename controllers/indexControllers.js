@@ -1,6 +1,8 @@
 module.exports = {
     index:(req,res)=>{
-
+        return res.render('/', {
+            title: 'CIRCULO-HOME',
+        })
     },
     about: (req,res)=> {
         return res.render('about', {
