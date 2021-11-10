@@ -14,6 +14,10 @@ router.get('/wellness',bienestar);
 router.get('/reservas',reserva);
 router.get('/tours',tour);
 router.get('./farmacias',farmacia);
+router.get('./delegados',delegado);
+router.get('./evacuacion',evacuation);
+router.get('/sorteos',sorteos);
 router.get('/formulario',formulario)
 router.get('/formularios',formularios)
 
+module.exports = router;
