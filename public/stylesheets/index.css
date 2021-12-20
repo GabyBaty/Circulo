@@ -23,6 +23,7 @@ p {
   font-family: var(--fuenteSecundaria);
 }
 
+
 /* CARROUSEL */
 
 .carrousel {
@@ -33,6 +34,10 @@ p {
   .carrousel {
     display: block;
   }
+  .card-asociate {
+    justify-content: center;
+  }
+ 
 }
 /*   CARROUSELL SLICKY */
 .carrousel_slicky {

@@ -178,10 +178,10 @@
             <img src="/images/new/<%= noticia.images %>" class="card-img-top" style="height: 15rem;" alt="...">
             <div class="card-body">
               <h3 class="card-title" ><%= noticia.name %></h3>
-              <h5 class="card-title" ><%= noticia.date %></h5>
-              <p class="card-text"style="font-size:1.4rem;"><%= noticia.autor.slice(0,60)//limita la cantidad de caracteres// %></p>
+              <h5 class="card-title" style="text-align: center;"><%= noticia.date %></h5>
+              
               <div class="d-flex justify-content-center">
-                <a href="/detailnews/<%= noticia.id %>" class="btn btn-success "style="font-size:1.4rem;">Leer más</a>
+                <a href="/detailnews/<%= noticia.id %>" class="btn btn-success "style="font-size:1.4rem; aligm-self:flex end ">Leer más</a>
               </div>
             </div>
           </div>

@@ -31,14 +31,12 @@
       <header>
         <div class="header-container">
           <div class="logo-container">
-            <a href="/"
-              ><img class="img-fluid" src="/images/logo.png" alt="logo-img"
-            /></a>
+            <a href="/"><img class="img-fluid" src="/images/logo.png" alt="logo-img"/></a>
           </div>
         <div class="nav-btn">
           <div class="search-input">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar producto..." aria-label="Buscar producto..."
+              <input type="text" class="form-control" placeholder="Tramites que podes realizar..." aria-label="Buscar producto..."
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
@@ -52,11 +50,11 @@
           <div class="header-nav-links">
             <ul>
               <li class="header-nav-link">
-                <a href="#" class="header-dropdown-content">Servicios <!-- <i class="fas fa-caret-down"></i> --></a>
+                <a href="#" class="header-dropdown-content">Servicios<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown hidden">
                   <ul>
                     <li class="dropdown-link" >
-                      <a href="#" class="header-dropdown-content">Alojamiento</a>
+                      <a href="#" class="header-dropdown-content">Alojamiento<i class="fas fa-caret-down"></i></a>
                       <div class="dropdown header-dropdown-secondary hidden">
                         <ul>
                           <li class="dropdown-link">
@@ -66,7 +64,7 @@
                       </div>     
                     </li>
                     <li class="dropdown-link">
-                      <a href="/wellness" class="header-dropdown-content">Bienestar Social</a>
+                      <a href="/wellness" class="header-dropdown-content">Bienestar Social<i class="fas fa-caret-down"></i></a>
                       <div class="dropdown header-dropdown-secondary hidden">
                         <ul>
                           <li class="dropdown-link">
@@ -110,7 +108,7 @@
                 </div>
               </li>
               <li class="header-nav-link">
-                <a href="#" class="header-dropdown-content"> Beneficios</a>
+                <a href="#" class="header-dropdown-content"> Beneficios<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown hidden">
                   <ul>
                     <li class="dropdown-link">
@@ -157,6 +155,7 @@
             </ul>
           </div>
         </div>
+        
         <div class="hamburger-menu-container">
           <div class="hamburger-menu">
             <div></div>
@@ -258,34 +257,39 @@
     <div class="noticias">
       <button  type="button" class="btn btn-success btn-sm" style=" border: none;" ><a href="/news/" style="color: aliceblue;font-size: 3rem;"> Ver todas las noticias</a> </button>
     </div>
-     <!--boton de whatsapp-->
-   <!--  <a href="https://wa.me/5491138665787?text=En que te podemos ayudar?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a> -->
-   <!-- Código de instalación Cliengo para batistuta9.gb@gmail.com -->
-    <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=dashboard'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
     
-    <div class="card-asociate row mt-5 p-5" >
+<script type="text/javascript">
+  (function () {
+      var options = {
+          whatsapp: "+54 9 11 3866-5787", // WhatsApp number
+          call_to_action: "Necesitas ayuda?", // Call to action
+          position: "right", // Position may be 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
+    
+
+
+    <div class="card-asociate row justify-content-around mt-5 p-5" >
       
-      <div class="card col-md-4" style="width: 45rem;background-color:#fced6a0a;">
+      <div class="card col-md-4 mb-4" style="width: 45rem;background-color:#fced6a0a;">
         <img src="/images/asociate.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <!-- <h5 class="card-title">Card title</h5> -->
           <h2 class="card-text"> Asociate y Disfruta de <br>
-            todos los Servivios y Beneficios<br>
+            todos los Servicios y Beneficios<br>
             que tenemos para vos....</h2>
           <a href="/formularios" class="btn btn-success d-grid gap-2" style="font-size:smaller; width: 75%; margin-left: 7rem;" >Asociate</a>
+          <a href="/formulario2" class="btn btn-success d-grid gap-2 mt-2 " style="font-size:smaller; width: 75%; margin-left: 7rem;" >Actualiza tus datos</a>
         </div>
       </div>
 
-      <div class="card col-md-4" style="width: 45rem;background-color:#fced6a0a;">
-        <div class="card-body">
-          <!-- <h5 class="card-title">Card title</h5> -->
-          <h2 class="card-text"> Enterate y Participa <br>
-            de los sorteos y fabulosos<br>
-            premios que te podes llevar....</h2>
-          <img src="/images/sorteo.jpg" class="card-img-top" alt="...">
-          <a href="/sorteos" class="btn btn-success d-grid gap-2 mx-auto mt-5 "style="font-size:smaller; width: 75%; ">Suscribite</a>
-        </div>
-      </div>
+      
     </div>
     <div class="card w-50 mx-auto"style="background-color:#fced6a0a;">
       <div class="card-body p-4">
@@ -402,6 +406,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Código de instalación Cliengo para batistuta9.gb@gmail.com -->
-     <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+   <!--   <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script> -->
   </body>
 </html>
