@@ -174,27 +174,38 @@
       <div class="container d-flex flex-wrap">
          <% noticias.forEach(noticia=> { %>
           <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card mt-5 " style="width: 25rem;height: 40rem;">
-            <img src="/images/new/<%= noticia.images %>" class="card-img-top" style="height: 15rem;" alt="...">
-            <div class="card-body">
-              <h3 class="card-title" ><%= noticia.name %></h3>
-              <h5 class="card-title" style="text-align: center;"><%= noticia.date %></h5>
-              
+            <div class="card mt-5 mx-2 " style="width: 25rem;height: 40rem;">
+              <img src="/images/new/<%= noticia.images %>" class="card-img-top" style="height: 15rem;" alt="...">
+              <div class="card-body d-flex" style="align-items: center; justify-content: center;">
+                <h3 class="d-flex" style="text-align: center ;"><%= noticia.name %></h3>  
+              </div>  
               <div class="d-flex justify-content-center">
-                <a href="/detailnews/<%= noticia.id %>" class="btn btn-success "style="font-size:1.4rem; aligm-self:flex end ">Leer más</a>
+                <h5 style="justify-content: center ; position: relative; bottom: 20px;"><%= noticia.date %></h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="/detailnews/<%= noticia.id %>" class="btn btn-success "style="font-size:1.4rem; position: relative; bottom: 15px;">Leer más</a>
               </div>
             </div>
           </div>
-        </div>
          <% }) %>
-       
-      
-       
-
       </div>
       
 
     </section>
+    <script type="text/javascript">
+      (function () {
+          var options = {
+              whatsapp: "+54 9 11 3866-5787", // WhatsApp number
+              call_to_action: "Necesitas ayuda?", // Call to action
+              position: "right", // Position may be 'right' or 'left'
+          };
+          var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    <!-- /GetButton.io widget -->
   </main>
 
    <!-- Footer -->
@@ -293,6 +304,6 @@
     crossorigin="anonymous"
   ></script>
   <!-- Código de instalación Cliengo para batistuta9.gb@gmail.com -->
-   <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+   <!-- <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/616f4740221edc002accd7cc/616f4741221edc002accd7cf.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script> -->
 </body>
 </html>
