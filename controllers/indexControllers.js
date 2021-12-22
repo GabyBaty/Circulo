@@ -71,5 +71,12 @@ module.exports = {
         })     
         
     },
+    tramite : (req,res) => {   
+        return res.render('tramites',{ 
+            title: 'CIRCULO-GUIA DE TRAMITES',
+            
+        })     
+        
+    },
    
 }

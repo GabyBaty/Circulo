@@ -16,6 +16,7 @@ var delegadoRouter=require('./routes/delegado');
 var evacuationRouter=require('./routes/evacuation');
 var contactoRouter=require('./routes/contacto');
 var detailRouter=require('./routes/detail');
+var tramiteRouter=require('./routes/tramite');
 
 
 var app = express();
@@ -42,6 +43,7 @@ app.use('/delegados',delegadoRouter);
 app.use('/evacuacion',evacuationRouter);
 app.use('/contactos',contactoRouter);
 app.use('/detailnews',detailRouter);
+app.use('/tramites',tramiteRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
