@@ -29,14 +29,25 @@ p {
 .carrousel {
   display: none;
 }
+.noticias{
+  display: none;
+}
+
+
 
 @media (min-width: 768px) {
   .carrousel {
     display: block;
   }
+  .noticias{
+    display: block;
+    text-align: center;
+  }
+ 
   .card-asociate {
     justify-content: center;
   }
+ 
  
 }
 /*   CARROUSELL SLICKY */

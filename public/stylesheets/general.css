@@ -300,6 +300,7 @@
     .hamburger-menu-container {
       display: flex;
     }
+    
   
     #check{
       display: block;
@@ -396,8 +397,19 @@
       background-color: #062e4e;
       line-height: 4rem;
     }
+    .carrousel2{
+      padding: 4rem;
+      width: 100%;
+    }
     
   } 
+  @media (max-width: 576px){
+    .carrousel2{
+      padding-left: 9rem;
+      width: 110%;
+      
+    }
+  }
  
 .card{
   box-shadow: 7px 13px 37px var(--color-negro)
