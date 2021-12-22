@@ -405,8 +405,8 @@
   } 
   @media (max-width: 576px){
     .carrousel2{
-      padding-left: 9rem;
-      width: 110%;
+      padding: 1rem;
+      
       
     }
   }
