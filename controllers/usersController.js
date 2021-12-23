@@ -33,24 +33,20 @@ module.exports = {
             return res.redirect('/')
         }else{
             return res.render('register',{
-               
-               
                 old : req.body,
                 errores : errors.mapped()
             })
         }
-        
     },
     login : (req,res) => {
-        return res.render('login',{
-           
+        return res.render('login',{ 
         })
     },
     processLogin : (req,res) => {
         let errors = validationResult(req);
         const {email, contrasenia} = req.body;
         if(errors.isEmpty()){
-            let usuario = usuarios.find(usuario => usuario.email === email)
+            let usuario = usuarios.find(usuario => ((usuario.email === email)&&(usuario.contrasenia === contrasenia)))
             req.session = {
                 id : usuario.id,
                 nombre : usuario.nombre,
@@ -58,8 +54,8 @@ module.exports = {
             }
             return res.redirect('/')
         }else{
+            /* return res.send(errors) */
             return res.render('login',{
-                productos,
                 errores : errors.mapped()
             })
         }
