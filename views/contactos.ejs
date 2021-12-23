@@ -25,12 +25,14 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61c3bb45b49622001aa18d96&product=inline-share-buttons" async="async"></script>
   </head>
   <body>
     <!--    HEADER -->
 
     <header>
       <div class="header-container">
+        <input type="checkbox" name="" id="check">
         <div class="logo-container row">
           <a href="/"
            class="d-flex justify-content-center" ><img class="img-fluid" style="width: min-content;" src="/images/logo.png" alt="logo-img"
@@ -40,25 +42,26 @@
       <div class="nav-btn">
         <div class="search-input">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar producto..." aria-label="Buscar producto..."
+           <!--  <input type="text" class="form-control" placeholder="Buscar producto..." aria-label="Buscar producto..."
               aria-describedby="basic-addon2">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="login-cart">
-          <a href="/users/login"><i class="fas fa-user"></i> Login</a>
-          <a href="/users/register"><i class="fas fa-user"></i> Registro</a>
+          <div class="sharethis-inline-share-buttons"></div>
+          <!-- <a href="/users/register"><i class="fas fa-user"></i> Delegados</a> -->
+          <a href="/users/login"><i class="fas fa-user"></i> Delegados</a>
         </div>
         <div class="header-nav-links">
           <ul>
             <li class="header-nav-link">
-              <a href="#" class="header-dropdown-content">Servicios <!-- <i class="fas fa-caret-down"></i> --></a>
+              <a href="#" class="header-dropdown-content">Servicios y Beneficios<i class="fas fa-caret-down"></i></a>
               <div class="dropdown hidden">
                 <ul>
                   <li class="dropdown-link" >
-                    <a href="#" class="header-dropdown-content">Alojamiento</a>
+                    <a href="#" class="header-dropdown-content">Alojamiento<i class="fas fa-caret-down"></i></a>
                     <div class="dropdown header-dropdown-secondary hidden">
                       <ul>
                         <li class="dropdown-link">
@@ -68,7 +71,7 @@
                     </div>     
                   </li>
                   <li class="dropdown-link">
-                    <a href="/wellness" class="header-dropdown-content">Bienestar Social</a>
+                    <a href="/wellness" class="header-dropdown-content">Bienestar Social<i class="fas fa-caret-down"></i></a>
                     <div class="dropdown header-dropdown-secondary hidden">
                       <ul>
                         <li class="dropdown-link">
@@ -108,34 +111,32 @@
                       </ul>
                     </div>     
                   </li>
+                      <li class="dropdown-link">
+                        <a href="#" class="header-dropdown-content">Farmacias<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown header-dropdown-secondary hidden">
+                          <ul>
+                            <li class="dropdown-link">
+                              <a href="/farmacias/#locales">Locales</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="https://www.farmacity.com/Farmacity/sucursales">Farmacity</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="/farmacias/#cobertura">Cobertura</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="/sorteos" class="header-dropdown-content">Sorteos</a>
+                      </li> 
                 </ul>
               </div>
             </li>
+         
             <li class="header-nav-link">
-              <a href="#" class="header-dropdown-content"> Beneficios</a>
-              <div class="dropdown hidden">
-                <ul>
-                  <li class="dropdown-link">
-                    <a href="#" class="header-dropdown-content">Farmacias</a>
-                    <div class="dropdown header-dropdown-secondary hidden">
-                      <ul>
-                        <li class="dropdown-link">
-                          <a href="/farmacias/#locales">Locales</a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a href="https://www.farmacity.com/Farmacity/sucursales">Farmacity</a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a href="/farmacias/#cobertura">Cobertura</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="/sorteos" class="header-dropdown-content">Sorteos</a>
-                  </li>
-                </ul>
-              </div>
+              <a href="/tramites/" class="header-dropdown-content">Tramites</a>
+             
             </li>
             <li class="header-nav-link">
               <a href="/filial/" class="header-dropdown-content">Filiales</a>
