@@ -301,8 +301,6 @@
     .hamburger-menu-container {
       display: flex;
     }
-    
-  
     #check{
       display: block;
     }  
@@ -407,8 +405,6 @@
   @media (max-width: 576px){
     .carrousel2{
       padding: 1rem;
-      
-      
     }
   }
  
