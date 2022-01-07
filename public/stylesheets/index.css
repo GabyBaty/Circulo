@@ -29,8 +29,9 @@ p {
 .carrousel {
   display: none;
 }
+
 .noticias{
-  display: none;
+  display: block;
 }
 
 
