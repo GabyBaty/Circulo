@@ -54,12 +54,12 @@ module.exports = {
             req.session = {
                 id : usuario.id,
                 nombre : usuario.nombre,
+                contrasenia : usuario.contrasenia,
                 rol : usuario.rol
             }
-            return res.redirect('/')
+            return res.redirect('/delegados')
         }else{
             return res.render('login',{
-                productos,
                 errores : errors.mapped()
             })
         }
