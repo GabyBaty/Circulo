@@ -4,8 +4,8 @@ const path = require('path');
 /* configuracion emailjs */
 const {SMTPClient, Message} = require('emailjs');
 const client = new SMTPClient({
-	user: 'urbaneventsportaleric@gmail.com',
-	password: 'gedeon300',
+	user: 'formulario.actualizacion@gmail.com',
+	password: 'Siempre3juntos',
 	host: 'smtp.gmail.com',
 	ssl: true,
 });
