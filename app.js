@@ -17,11 +17,13 @@ var evacuationRouter=require('./routes/evacuation');
 var contactoRouter=require('./routes/contacto');
 var detailRouter=require('./routes/detail');
 var tramiteRouter=require('./routes/tramite');
-
+var  cors = require('cors');
+ 
 
 var app = express();
 
 // view engine setup
+app.use(cors());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
