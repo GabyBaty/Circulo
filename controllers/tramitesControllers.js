@@ -24,27 +24,28 @@ module.exports ={
         const message = new Message( {
             text: 'i hope this works',
             from: 'formulario.actualizacion@gmail.com',
-            to: 'gabriel.carrizo@cirsubgn.org',
+            to: 'gabriel.carrizo@cirsubgn.org , afiliaciones@cirsubgn.org',
+            cc: 'paginacirsub@cirsubgn.org',
             subject: 'testing emailjs',
              attachment: [
                 { data: `
                 <html>
-                    <b>Código estadístico</b><span>${codigo}<span/>
-                    <b>Situación</b><span>${situacion}<span/>
-                    <b>Documento</b><span>${documento}<span/>
-                    <b>CUIL</b><span>${cuil}<span/>
-                    <b>Número de socio</b><span>${socio}<span/>
-                    <b>Apellido</b><span>${apellido}<span/>
-                    <b>Nombre</b><span>${nombre}<span/>
-                    <b>Cargo</b><span>${cargo}<span/>
-                    <b>Unidad</b><span>${unidad}<span/>
-                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/>
-                    <b>Provincia</b><span>${provincia}<span/>
-                    <b>Localidad</b><span>${localidad}<span/>
-                    <b>Domicilio</b><span>${domicilio}<span/>
-                    <b>Codigo Postal</b><span>${cp}<span/>
-                    <b>Teléfono fijo</b><span>${telefono}<span/>
-                    <b>Telefono celular</b><span>${celular}<span/>
+                    <b>Código estadístico</b><span>${codigo}<span/><br> 
+                    <b>Situación</b><span>${situacion}<span/><br> 
+                    <b>Documento</b><span>${documento}<span/><br> 
+                    <b>CUIL</b><span>${cuil}<span/><br> 
+                    <b>Número de socio</b><span>${socio}<span/><br> 
+                    <b>Apellido</b><span>${apellido}<span/><br> 
+                    <b>Nombre</b><span>${nombre}<span/><br> 
+                    <b>Cargo</b><span>${cargo}<span/><br> 
+                    <b>Unidad</b><span>${unidad}<span/><br> 
+                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br> 
+                    <b>Provincia</b><span>${provincia}<span/><br> 
+                    <b>Localidad</b><span>${localidad}<span/><br> 
+                    <b>Domicilio</b><span>${domicilio}<span/><br> 
+                    <b>Codigo Postal</b><span>${cp}<span/><br> 
+                    <b>Teléfono fijo</b><span>${telefono}<span/><br> 
+                    <b>Telefono celular</b><span>${celular}<span/><br> 
 
                 </html>`, 
                 alternative: true },
