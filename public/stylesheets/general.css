@@ -400,7 +400,6 @@
       padding: 4rem;
       width: 100%;
     }
-    
   } 
   @media (max-width: 576px){
     .carrousel2{
@@ -411,6 +410,17 @@
 .card{
   box-shadow: 7px 13px 37px var(--color-negro)
 }
+.about .container .card {
+  padding:0.9rem;
+}
+.about .container2 .container .card{
+  padding: 1.3rem;
+}
+
+.about .elementor-row {
+  padding: 1rem;
+}
+
   /* ---------------FOOTER--------------------- */
 .footer-container, .copyright-footer {
     background-color: var(--color-celeste);
