@@ -73,6 +73,7 @@
     background-color: var(--color-celeste);
     width: 100%;
     z-index: 1000;
+    padding: 0;
   }
   
   .header-container {
@@ -419,6 +420,11 @@
 
 .about .elementor-row {
   padding: 1rem;
+}
+.noticias{
+  display: block;
+  text-align: center;
+  padding-left: 4;
 }
 
   /* ---------------FOOTER--------------------- */
