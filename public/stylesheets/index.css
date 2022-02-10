@@ -24,6 +24,12 @@ p {
   font-family: var(--fuenteSecundaria);
   
 }
+.card-pdf{
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 5rem;
+  
+}
 
 
 /* CARROUSEL */
