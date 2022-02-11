@@ -433,6 +433,14 @@
     justify-content: center;
     text-align: center;
 }
+.card .embed {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  width: 100%;
+  
+}
+
 
 
 
