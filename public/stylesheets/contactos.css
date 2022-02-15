@@ -7,3 +7,13 @@
 .contactos .container .card a:hover{
     color:#32A455
 }
+
+@media (max-width: 576px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+     
+    }

@@ -1,0 +1,9 @@
+@media (max-width: 576px){
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
