@@ -19,14 +19,14 @@ module.exports ={
         
     },
     sendForm : (req,res) => {
-        const {codigo,situacion,documento,cuil,socio,apellido,nombre,cargo,unidad,nacimiento,provincia,localidad,domicilio,cp,telefono,celular} = req.body
+        const {codigo,situacion,documento,cuil,socio,apellido,nombre,cargo,unidad,nacimiento,provincia,localidad,domicilio,cp,telefono,celular,mail} = req.body
        
         const message = new Message( {
             text: 'i hope this works',
             from: 'formulario.actualizacion@gmail.com',
             to: 'gabriel.carrizo@cirsubgn.org , afiliaciones@cirsubgn.org',
             cc: 'paginacirsub@cirsubgn.org',
-            subject: 'testing emailjs',
+            subject: 'Datos para afiliarse o actualizar',
              attachment: [
                 { data: `
                 <html>
@@ -45,7 +45,8 @@ module.exports ={
                     <b>Domicilio</b><span>${domicilio}<span/><br> 
                     <b>Codigo Postal</b><span>${cp}<span/><br> 
                     <b>Teléfono fijo</b><span>${telefono}<span/><br> 
-                    <b>Telefono celular</b><span>${celular}<span/><br> 
+                    <b>Telefono celular</b><span>${celular}<span/><br>
+                    <b>E-mail</b><span>${mail}<span/><br> 
 
                 </html>`, 
                 alternative: true },
