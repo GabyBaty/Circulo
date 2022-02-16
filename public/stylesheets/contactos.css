@@ -1,3 +1,8 @@
+.contactos .container .card{
+    width:45%
+}
+
+
 .contactos .container .card h3{
     color: #32A455
 }
@@ -15,5 +20,8 @@
         flex-direction: column;
         justify-content: space-between;
       }
+      .contactos .container .card{
+        width: 85%;
+    }
      
     }
