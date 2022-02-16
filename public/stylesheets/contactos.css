@@ -25,3 +25,8 @@
     }
      
     }
+    @media (max-width: 368px) {
+        .contactos .container .card{
+            width: 100%;
+    } 
+} 
