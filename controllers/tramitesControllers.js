@@ -19,7 +19,7 @@ module.exports ={
         
     },
     sendForm : (req,res) => {
-        const {codigo,situacion,documento,cuil,socio,apellido,nombre,cargo,unidad,nacimiento,provincia,localidad,domicilio,cp,telefono,celular,mail} = req.body
+        const {codigo,situacion,documento,cuil,socio,apellido,nombre,grado,unidad,nacimiento,provincia,localidad,domicilio,cp,telefono,celular,mail} = req.body
        
         const message = new Message( {
             text: 'i hope this works',
@@ -37,7 +37,7 @@ module.exports ={
                     <b>Número de socio</b><span>${socio}<span/><br> 
                     <b>Apellido</b><span>${apellido}<span/><br> 
                     <b>Nombre</b><span>${nombre}<span/><br> 
-                    <b>Cargo</b><span>${cargo}<span/><br> 
+                    <b>Cargo</b><span>${grado}<span/><br> 
                     <b>Unidad</b><span>${unidad}<span/><br> 
                     <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br> 
                     <b>Provincia</b><span>${provincia}<span/><br> 
