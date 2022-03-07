@@ -439,8 +439,29 @@
       
     }
   }
-  
-  
+ /*  
+  #button-up{
+    width: 60px;
+    height: 52px;
+    background-color: #32502E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebebeb;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    left: 15px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+  }
+
+  #button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0,0.1);
+  } */
   
   /* ---------------FOOTER--------------------- */
 .footer-container, .copyright-footer {
