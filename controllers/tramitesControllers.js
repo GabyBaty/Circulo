@@ -58,9 +58,10 @@ module.exports ={
         return res.redirect('/')
     },
     
-/* 
+
     sendForm2 : (req,res) => {
-        const {codigo,situacion,alta,apellido,nombre,socio,parentesco,apellido2,nombres2,dni2,nacimiento} = req.body
+        /* return (res.send(req.body)) */
+        const {codigo,situacion,alta,apellido,nombre,socio,parentesco,apellido2,nombres2,dni2,nacimiento,socio3,parentesco3,apellido3,nombres3,dni3,nacimiento3,socio4,parentesco4,apellido4,nombres4,dni4,nacimiento4,socio5,parentesco5,apellido5,nombres5,dni5,nacimiento5,socio6,parentesco6,apellido6,nombres6,dni6,nacimiento6} = req.body
        
         const message = new Message( {
             text: 'i hope this works',
@@ -82,30 +83,30 @@ module.exports ={
                     <b>Nombres</b><span>${nombres2}<span/><br> 
                     <b>DNI</b><span>${dni2}<span/><br> 
                     <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br>
-                    <b>Número de socio</b><span>${socio}<span/><br> 
-                    <b>Parentesco</b><span>${parentesco}<span/><br> 
-                    <b>Apellido</b><span>${apellido2}<span/><br> 
-                    <b>Nombres</b><span>${nombres2}<span/><br> 
-                    <b>DNI</b><span>${dni2}<span/><br> 
-                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br>
-                    <b>Número de socio</b><span>${socio}<span/><br> 
-                    <b>Parentesco</b><span>${parentesco}<span/><br> 
-                    <b>Apellido</b><span>${apellido2}<span/><br> 
-                    <b>Nombres</b><span>${nombres2}<span/><br> 
-                    <b>DNI</b><span>${dni2}<span/><br> 
-                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br>
-                    <b>Número de socio</b><span>${socio}<span/><br> 
-                    <b>Parentesco</b><span>${parentesco}<span/><br> 
-                    <b>Apellido</b><span>${apellido2}<span/><br> 
-                    <b>Nombres</b><span>${nombres2}<span/><br> 
-                    <b>DNI</b><span>${dni2}<span/><br> 
-                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br>
-                    <b>Número de socio</b><span>${socio}<span/><br> 
-                    <b>Parentesco</b><span>${parentesco}<span/><br> 
-                    <b>Apellido</b><span>${apellido2}<span/><br> 
-                    <b>Nombres</b><span>${nombres2}<span/><br> 
-                    <b>DNI</b><span>${dni2}<span/><br> 
-                    <b>Fecha de nacimiento</b><span>${nacimiento}<span/><br> 
+                    <b>Número de socio</b><span>${socio3}<span/><br> 
+                    <b>Parentesco</b><span>${parentesco3}<span/><br> 
+                    <b>Apellido</b><span>${apellido3}<span/><br> 
+                    <b>Nombres</b><span>${nombres3}<span/><br> 
+                    <b>DNI</b><span>${dni3}<span/><br> 
+                    <b>Fecha de nacimiento</b><span>${nacimiento3}<span/><br>
+                    <b>Número de socio</b><span>${socio4}<span/><br> 
+                    <b>Parentesco</b><span>${parentesco4}<span/><br> 
+                    <b>Apellido</b><span>${apellido4}<span/><br> 
+                    <b>Nombres</b><span>${nombres4}<span/><br> 
+                    <b>DNI</b><span>${dni4}<span/><br> 
+                    <b>Fecha de nacimiento</b><span>${nacimiento4}<span/><br>
+                    <b>Número de socio</b><span>${socio5}<span/><br> 
+                    <b>Parentesco</b><span>${parentesco5}<span/><br> 
+                    <b>Apellido</b><span>${apellido5}<span/><br> 
+                    <b>Nombres</b><span>${nombres5}<span/><br> 
+                    <b>DNI</b><span>${dni5}<span/><br> 
+                    <b>Fecha de nacimiento</b><span>${nacimiento5}<span/><br>
+                    <b>Número de socio</b><span>${socio6}<span/><br> 
+                    <b>Parentesco</b><span>${parentesco6}<span/><br> 
+                    <b>Apellido</b><span>${apellido6}<span/><br> 
+                    <b>Nombres</b><span>${nombres6}<span/><br> 
+                    <b>DNI</b><span>${dni6}<span/><br> 
+                    <b>Fecha de nacimiento</b><span>${nacimiento6}<span/><br> 
                   
 
                 </html>`, 
@@ -116,7 +117,7 @@ module.exports ={
             console.log(err || message);
         });
         return res.redirect('/')
-    }, */
+    }, 
     
 
 }
