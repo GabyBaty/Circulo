@@ -1,497 +1,808 @@
 <%- include('partials/head.ejs')%>
+
   <body>
-      <!--    HEADER -->
+    <!--    HEADER -->
 
-      <%- include('partials/header.ejs')%>
-  <main>
-    <!--Botón ir hacia arriba-->
-    <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top"><i
-        class="fas fa-arrow-up"></i></button>
+    <%- include('partials/header.ejs')%>
+      <main>
+        <!--Botón ir hacia arriba-->
+        <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top"><i
+            class="fas fa-arrow-up"></i></button>
 
-    <div class="elementor-row">
-      <section class="container">
+        <div class="elementor-row">
+          <section class="container">
 
-        <h4 class="aux-modern-heading-secondary mb-4" style="color: darkgreen;font-size:8rem;text-align:center ">Guia de
-          Tramites</h4>
-        <div class="elementor-text-editor elementor-clearfix p-5">
-          <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="asociate">
-            <strong>Asociate a la Mutual</strong>
-          </h1>
-        </div>  
-          <div class="row mb-3">
-           <!--  <img width="600" height="400" src="/images/afiliate.jpeg"> -->
-           <video autoplay controls >
-             <source src="/images/presentacion.mp4" type="video/mp4" >
-           </video>
-            <h3 class="mt-5">Asociate a la  <strong>Mutual</strong> y pertenece a esta gran família que desde hace 70 años trabaja para el beneficio de todos los asociados. </h3>
-            <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center "><strong>¿Cómo afiliarte?</strong></h3><br><br>
-            <h3>Complete el formulario que está a continuación, haga click en el botón <strong>ENVIAR
-              FORMULARIO</strong>, estos datos serán verificados por un asesor y luego recibirá un mail confirmando su afiliación.</h3>
-          </div>
+            <h4 class="aux-modern-heading-secondary mb-4" style="color: darkgreen;font-size:8rem;text-align:center ">
+              Guia de
+              Tramites</h4>
+            <div class="elementor-text-editor elementor-clearfix p-5">
+              <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="asociate">
+                <strong>Asociate a la Mutual</strong>
+              </h1>
+            </div>
+            <div class="row mb-3">
+              <!--  <img width="600" height="400" src="/images/afiliate.jpeg"> -->
+              <video autoplay controls>
+                <source src="/images/presentacion.mp4" type="video/mp4">
+              </video>
+              <h3 class="mt-5">Asociate a la <strong>Mutual</strong> y pertenece a esta gran família que desde hace 70
+                años trabaja para el beneficio de todos los asociados. </h3>
+              <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center "><strong>¿Cómo
+                  afiliarte?</strong></h3><br><br>
+              <h3>Complete el formulario que está a continuación, haga click en el botón <strong>ENVIAR
+                  FORMULARIO</strong>, estos datos serán verificados por un asesor y luego recibirá un mail confirmando
+                su afiliación.</h3>
+            </div>
 
-          <div class="card-form card p-4 mb-4"
-            style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
-            <!-- formulario -->
-            <form class="row g-3" method="POST" action="/tramites/tramites">
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Código Estadistico</label>
-                <input name="codigo" type="text" class="form-control" id="validationDefault01" placeholder="N° de código"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Situación</label>
-                <select class="form-select" aria-label="Disabled select example" name="situacion">
-                  <option selected>Selecione su Situación</option>
-                  <option value="1">En Actividad</option>
-                  <option value="2">Retirado</option>
-                  <option value="3">Empleado</option>
-                </select>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de documento</label>
-                <input name="documento" type="text" class="form-control" id="validationDefault02" placeholder="N° de DNI"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de CUIL</label>
-                <input name="cuil" type="text" class="form-control" id="validationDefault02" placeholder="xx-xxxxxxxx-x"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de Socio</label>
-                <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Apellido</label>
-                <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
-                  required>
-                <div class="valid-feedback">
-                  Looks good!
+            <div class="card-form card p-4 mb-4"
+              style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
+              <!-- formulario -->
+              <form class="row g-3" method="POST" action="/tramites/tramites">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Código Estadistico</label>
+                  <input name="codigo" type="text" class="form-control" id="validationDefault01"
+                    placeholder="N° de código" required>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Nombres</label>
-                <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-                <div class="valid-feedback">
-                  Looks good!
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Situación</label>
+                  <select class="form-select" aria-label="Disabled select example" name="situacion">
+                    <option selected>Selecione su Situación</option>
+                    <option value="1">En Actividad</option>
+                    <option value="2">Retirado</option>
+                    <option value="3">Empleado</option>
+                  </select>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Grado</label>
-                <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Unidad</label>
-                <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
-                <div id="cid_7" class="form-input-wide jf-required">
-                  <div data-wrapper-react="true" class="extended notLiteMode">
-                    <input name="nacimiento" type="date" class="form-control fechainput"
-                      style="width: 200px; border-color:dimgrey; height: 30px;">
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de documento</label>
+                  <input name="documento" type="text" class="form-control" id="validationDefault02"
+                    placeholder="N° de DNI" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de CUIL</label>
+                  <input name="cuil" type="text" class="form-control" id="validationDefault02"
+                    placeholder="xx-xxxxxxxx-x" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de Socio</label>
+                  <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Apellido</label>
+                  <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
+                    required>
+                  <div class="valid-feedback">
+                    Looks good!
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Provincia</label>
-                <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Localidad</label>
-                <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Domicilio</label>
-                <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Código Postal</label>
-                <input name="cp" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
-                <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Teléfono Celular</label>
-                <input name="celular" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">E-mail</label>
-                <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx" required>
-              </div>
-              <div class="d-flex justify-content-center ">
-                <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
-              </div>
-            </form>
-          </div>  
-      </section>
-      <section class="container">
-        <div class="elementor-text-editor elementor-clearfix p-5">
-          <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="actualizacion">
-            <strong>Actualización de Datos</strong>
-          </h1>
-        </div>  
-          <div class="row">
-            <img width="600" height="400" src="/images/actualizaciondeDatos.jpeg">
-            <h3 class="mt-5">La <strong>Mutual</strong> los invita a cargar sus datos personales para actualizar la base
-              de datos y así ofrecerles una mejor atención como cada uno de ustedes merecen.</h3>
-            <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center"><strong>¿Cómo funciona?</strong></h3><br><br>
-            <h3>Es muy simple. Solo llene el formulario que está a continuación, haga click en el botón <strong>ENVIAR
-              FORMULARIO</strong>, y listo automáticamente estos datos se veran reflejados en nuestra base.</h3>
-          </div>
-
-          <div class="card-form card p-4 mb-5"
-            style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
-            <!-- formulario -->
-            <form class="row g-3" method="POST" action="/tramites/tramites">
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Código Estadistico</label>
-                <input name="codigo" type="text" class="form-control" id="validationDefault01" placeholder="N° de código"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Situación</label>
-                <select class="form-select" aria-label="Disabled select example" name="situacion">
-                  <option selected>Selecione su Situación</option>
-                  <option value="1">En Actividad</option>
-                  <option value="2">Retirado</option>
-                  <option value="3">Empleado</option>
-                </select>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de documento</label>
-                <input name="documento" type="text" class="form-control" id="validationDefault02" placeholder="N° de DNI"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de CUIL</label>
-                <input name="cuil" type="text" class="form-control" id="validationDefault02" placeholder="xx-xxxxxxxx-x"
-                  required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de Socio</label>
-                <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Apellido</label>
-                <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
-                  required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Nombres</label>
-                <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Grado</label>
-                <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Unidad</label>
-                <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
-                <div id="cid_7" class="form-input-wide jf-required">
-                  <div data-wrapper-react="true" class="extended notLiteMode">
-                    <input name="nacimiento" type="date" class="form-control fechainput"
-                      style="width: 200px; border-color:dimgrey; height: 30px;">
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Nombres</label>
+                  <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                  <div class="valid-feedback">
+                    Looks good!
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Provincia</label>
-                <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Localidad</label>
-                <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Domicilio</label>
-                <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Código Postal</label>
-                <input name="cp" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
-                <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Teléfono Celular</label>
-                <input name="celular" type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">E-mail</label>
-                <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx" required>
-              </div>
-              <div class="d-flex justify-content-center ">
-                <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
-              </div>
-            </form>
-          </div>  
-      </section>
-    </div>
-    <section class="container">
-      <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="asesoramiento"><strong>ASESORAMIENTO
-          CONTABLE</strong></h1>
-      <div class="row">
-        <img width="600" height="400" src="/images/financiero.jpeg">
-        <h3 class="mt-5">La <strong>Mutual</strong> tiene el agrado de informarles sobre este nuevo servicio gratuito
-          que le posibilitará al socio ganar, ahorrar e invertir dinero.</h3>
-        <h3 class="mt-3" style="color: darkgreen;font-size:4rem;"><strong>¿Cómo funciona?</strong></h3><br><br>
-        <h3>Es muy simple. Cuando el socio solicite este beneficio, se le asignará un contador que le realizará un orden
-          en sus gastos de todos los meses. Con este seguimiento, el socio podrá ahorrar gran parte del dinero que hoy
-          destina al pago de impuestos y servicios. A su vez, será asesorado en todas las dudas y consultas que le
-          surjan para que no se vea afectado su salario mes a mes. Por este trabajo no se cobran honorarios de ningún
-          tipo. Comunicate con nuestro asesor y empezá a hacer rendir su sueldo.</h3>
-        <em>CONTACTO:&nbsp; Carlos Piccardo // Mail:&nbsp;carlos@segaconsultores.com&nbsp; // Teléfono: (11)
-          2192-5427</em>
-      </div>
-    </section>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Grado</label>
+                  <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Unidad</label>
+                  <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
+                  <div id="cid_7" class="form-input-wide jf-required">
+                    <div data-wrapper-react="true" class="extended notLiteMode">
+                      <input name="nacimiento" type="date" class="form-control fechainput"
+                        style="width: 200px; border-color:dimgrey; height: 30px;">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Provincia</label>
+                  <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Localidad</label>
+                  <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Domicilio</label>
+                  <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Código Postal</label>
+                  <input name="cp" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
+                  <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Teléfono Celular</label>
+                  <input name="celular" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">E-mail</label>
+                  <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                    required>
+                </div>
+                <div class="d-flex justify-content-center ">
+                  <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section class="container">
+            <div class="elementor-text-editor elementor-clearfix p-5">
+              <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="actualizacion">
+                <strong>Actualización de Datos</strong>
+              </h1>
+            </div>
+            <div class="row">
+              <img width="600" height="400" src="/images/actualizaciondeDatos.jpeg">
+              <h3 class="mt-5">La <strong>Mutual</strong> los invita a cargar sus datos personales para actualizar la
+                base
+                de datos y así ofrecerles una mejor atención como cada uno de ustedes merecen.</h3>
+              <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center"><strong>¿Cómo actualizar los
+                  datos?</strong></h3><br><br>
+              <h3>Es muy simple. Solo llene el formulario que está a continuación, haga click en el botón <strong>ENVIAR
+                  FORMULARIO</strong>, y listo automáticamente estos datos se veran reflejados en nuestra base.</h3>
+            </div>
 
-    <section class="container">
-      <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="juridico"><strong>ASESORAMIENTO
-          JURIDICO</strong></h1>
-      <div class="row">
-        <img width="600" height="400" src="/images/asesoramiento-juridico.jpeg">
-        <h3>Todos los socios del Círculo de Suboficiales de Gendarmería Nacional podrán contar con el servicio de
-          consultoría jurídica, las 24 hs. y de forma gratuita.</p>
-          <p>El servicio cubre consultas de carácter profesional y de salud: esto significa que los socios podrán ser
-            asesorados sobre cuestiones ligadas a su labor, y ante eventualidades que le puedan surgir producto de la
-            pandemia por COVID-19.
-        </h3>
-        <p>CONTACTOS: Mail: legales@cirsubgn.org // Tel: (11) 5589-7211 / (11) 3838-4701 /</p>
-        <p>*Esta mutual exime a sus asociados del pago de honorarios en casos de ART.</p>
-      </div>
-    </section>
+            <div class="card-form card p-4 mb-5"
+              style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
+              <!-- formulario -->
+              <form class="row g-3" method="POST" action="/tramites/tramites">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Código Estadistico</label>
+                  <input name="codigo" type="text" class="form-control" id="validationDefault01"
+                    placeholder="N° de código" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Situación</label>
+                  <select class="form-select" aria-label="Disabled select example" name="situacion">
+                    <option selected>Selecione su Situación</option>
+                    <option value="1">En Actividad</option>
+                    <option value="2">Retirado</option>
+                    <option value="3">Empleado</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de documento</label>
+                  <input name="documento" type="text" class="form-control" id="validationDefault02"
+                    placeholder="N° de DNI" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de CUIL</label>
+                  <input name="cuil" type="text" class="form-control" id="validationDefault02"
+                    placeholder="xx-xxxxxxxx-x" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Número de Socio</label>
+                  <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Apellido</label>
+                  <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
+                    required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Nombres</label>
+                  <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Grado</label>
+                  <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Unidad</label>
+                  <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                    required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
+                  <div id="cid_7" class="form-input-wide jf-required">
+                    <div data-wrapper-react="true" class="extended notLiteMode">
+                      <input name="nacimiento" type="date" class="form-control fechainput"
+                        style="width: 200px; border-color:dimgrey; height: 30px;">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Provincia</label>
+                  <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Localidad</label>
+                  <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Domicilio</label>
+                  <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Código Postal</label>
+                  <input name="cp" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
+                  <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Teléfono Celular</label>
+                  <input name="celular" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">E-mail</label>
+                  <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                    required>
+                </div>
+                <div class="d-flex justify-content-center ">
+                  <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
+                </div>
+              </form>
+            </div>
+          </section>
+         <!--  <section class="container">
+            <div class="elementor-text-editor elementor-clearfix p-5">
+              <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="actualizacion">
+                <strong>Altas Familiares</strong>
+              </h1>
+            </div>
+            <div class="row">
+              <img width="600" height="400" src="/images/cargafamiliar.jpg">
+              <h3 class="mt-5">La <strong>Mutual</strong> también les proporciona la posibilidad de poder afiliar o
+                actualizar los datos de los Familiares a cargo.</h3>
+              <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center"><strong>¿Cómo
+                  funciona?</strong></h3><br><br>
+              <h3>Es muy simple. Solo llene el formulario que está a continuación, haga click en el botón <strong>ENVIAR
+                  FORMULARIO</strong>, y listo automáticamente estos datos se veran reflejados en nuestra base de datos.
+              </h3>
+            </div>
 
-    <section class="container">
-      <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="bodas"><strong>BENEFICIO POR BODAS
-          DE ORO</strong></h1>
-      <div class="row">
-        <img width="600" height="400" src="/images/bodas.jpeg"><br>
-        <h3 class="mt-5">Cuando ambos cónyuges sean asociados a la Mutual Círculo de Suboficiales de Gendarmería
-          Nacional, se liquidará el beneficio a cada uno de los contrayentes, y se otorgarán diez (10) días de
-          alojamiento en cualquier lugar del país, teniendo en cuenta lo establecido en el Reglamento de Subsidios por
-          Casamiento y Bodas de Oro. -Art. 3-
-          <p><strong>Percepción de cualquiera de los beneficios:</strong> el asociado deberá encontrarse al día con el
-            pago de la cuota social en el momento de acaecido el acontecimiento, no estar cumpliendo el período de
-            carencia al que se refiere el artículo 12 del presente. –Art.7-</p>
-          <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la
-            presentación de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o Juzgado,
-            según corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el
-            certificado de nacimiento del menor adoptado. –Art.8-</p>
-          <p><strong>Plazo de presentación:</strong>el beneficio establecido en el presente reglamento debe ser
-            requerido por el socio antes de trasncurrido un (1) año, a contar desde el momento en que ocurrió el
-            acontecimiento, vencido ese plazo se perderá todo derecho a tal fin, se tomará como válida la fecha de
-            recepción en Mesa de Entrada o del matasellos del correo cuando se envíe por correo electrónico.&nbsp;
-            -Art.10-</p>
-          <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
-            fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
-          <p><strong>Carencia</strong>: Para acceder al beneficio, el asociado deberá tener un antigüedad mínima como
-            tal, de tres (3) meses al momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la
-            carencia se extenderá a seis (6) meses. -Art.12-</p>
-          <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
-            socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
-          <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los recursos
-            provenientes de la cuota social. –Art. 14-</p>
-          <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus decisiones
-            podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación. -Art.15-
-          </p>
-          <p>CONTACTO</u>: bienestar@cirsubgn.org</p>
-        </h3>
-      </div>
-    </section>
+            <div class="card-form card p-4 mb-5"
+              style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);"> -->
+              <!-- formulario -->
+            <!--   <div class="row">
+              <form>
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Código Estadistico</label>
+                  <input name="codigo" type="text" class="form-control" id="validationDefault01"
+                    placeholder="N° de código">
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Situación</label>
+                  <select class="form-select" aria-label="Disabled select example" name="situacion">
+                    <option selected>Selecione su Situación</option>
+                    <option value="1">En Actividad</option>
+                    <option value="2">Retirado</option>
+                    <option value="3">Empleado</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Fecha de Alta: </label>
+                  <div id="cid_7" class="form-input-wide jf-">
+                    <div data-wrapper-react="true" class="extended notLiteMode">
+                      <input name="alta" type="date" class="form-control fechainput"
+                        style="width: 200px; border-color:dimgrey; height: 30px;">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Apellido</label>
+                  <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Nombres</label>
+                  <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">N° Socio</label>
+                    <input name="socio" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Parentesco</label>
+                    <input name="parentesco" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Apellido</label>
+                    <input name="apellido2" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input name="nombres2" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">DNI</label>
+                    <input name="dni2" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom02" class="form-label">Fecha de Nacimiento: </label>
+                    <div id="cid_7" class="form-input-wide jf-">
+                      <div data-wrapper-react="true" class="extended notLiteMode">
+                        <input name="nacimiento" type="date" class="form-control fechainput"
+                          style="width: 200px; border-color:dimgrey; height: 30px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">N° Socio</label>
+                    <input name="socio3" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Parentesco</label>
+                    <input name="parentesco3" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Apellido</label>
+                    <input name="apellido3" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input name="nombres3" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">DNI</label>
+                    <input name="dni3" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom02" class="form-label">Fecha de Nacimiento: </label>
+                    <div id="cid_7" class="form-input-wide jf-">
+                      <div data-wrapper-react="true" class="extended notLiteMode">
+                        <input name="nacimiento3" type="date" class="form-control fechainput"
+                          style="width: 200px; border-color:dimgrey; height: 30px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">N° Socio</label>
+                    <input name="socio4" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Parentesco</label>
+                    <input name="parentesco4" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Apellido</label>
+                    <input name="apellido4" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input name="nombres4" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">DNI</label>
+                    <input name="dni4" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom02" class="form-label">Fecha de Nacimiento: </label>
+                    <div id="cid_7" class="form-input-wide jf-">
+                      <div data-wrapper-react="true" class="extended notLiteMode">
+                        <input name="nacimiento4" type="date" class="form-control fechainput"
+                          style="width: 200px; border-color:dimgrey; height: 30px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">N° Socio</label>
+                    <input name="socio5" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Parentesco</label>
+                    <input name="parentesco5" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Apellido</label>
+                    <input name="apellido5" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input name="nombres5" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">DNI</label>
+                    <input name="dni5" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom02" class="form-label">Fecha de Nacimiento: </label>
+                    <div id="cid_7" class="form-input-wide jf-">
+                      <div data-wrapper-react="true" class="extended notLiteMode">
+                        <input name="nacimiento5" type="date" class="form-control fechainput"
+                          style="width: 200px; border-color:dimgrey; height: 30px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">N° Socio</label>
+                    <input name="socio6" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Parentesco</label>
+                    <input name="parentesco6" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Apellido</label>
+                    <input name="apellido6" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input name="nombres6" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationDefault01" class="form-label">DNI</label>
+                    <input name="dni6" type="text" class="form-control" id="validationDefault01" placeholder="">
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom02" class="form-label">Fecha de Nacimiento: </label>
+                    <div id="cid_7" class="form-input-wide jf-">
+                      <div data-wrapper-react="true" class="extended notLiteMode">
+                        <input name="nacimiento6" type="date" class="form-control fechainput"
+                          style="width: 200px; border-color:dimgrey; height: 30px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center ">
+                  <input type="submit" class="btn btn-success" id="button" value="Enviar Formulario" >
+                </div>
+              </form>
 
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <section class="container">
-      <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="casamiento"><strong>SUBSIDIO POR
-          CASAMIENTO</strong></h1>
-      <div class="row">
-        <img width="600" height="400" src="/images/casamiento.jpeg"><br>
-        <p>Si ambos cónyuges son&nbsp;asociados de la Mutual Círculo de Suboficiales de Gendarmería Nacional, se
-          liquidará el beneficio a cada uno de los contrayentes, teniendo en cuenta lo&nbsp; establecido en el
-          Reglamento de Subsidios por Casamiento y Bodas de Oro.</p>
-        <p>A cada socio que perciba el subsidio se le otorgará&nbsp;diez (10) días de alojamiento en cualquier lugar del
-          país. -Art. 3-</p>
-        <p>En caso&nbsp;de que ambos cónyuges estén afiliados a la Mutual, el beneficio será solo por diez (10)
-          días.&nbsp;</p>
-        <p><strong>Percepción de cualquiera de los beneficios:</strong>&nbsp;el asociado deberá encontrarse al día con
-          el pago de la cuota social en el momento de acaecido el acontecimiento, no estar cumpliendo el período de
-          carencia al que se refiere el artículo 12 del presente. –Art.7-</p>
-        <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la presentación
-          de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o Juzgado, según
-          corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el certificado de
-          nacimiento del menor adoptado. –Art.8-</p>
-        <p><strong>Plazo de presentación:&nbsp;</strong>el beneficio establecido en el presente reglamento debe ser
-          requerido por el socio antes de transcurrido un (1) año, a contar desde el momento en que ocurrió el
-          acontecimiento, vencido ese plazo se perderá todo derecho a tal fin, se tomará como válida la fecha de
-          recepción en Mesa de Entrada o del matasellos del correo cuando se envíe por correo electrónico.&nbsp;
-          -Art.10-</p>
-        <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
-          fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
-        <p><strong>Carencia</strong>: Para acceder al beneficio, el asociado deberá tener un antigüedad mínima como tal,
-          de tres (3) meses al momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la carencia se
-          extenderá a seis (6) meses. -Art.12-</p>
-        <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
-          socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
-        <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los recursos
-          provenientes de la cuita social. –Art. 14-</p>
-        <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus decisiones
-          podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación. -Art.15</p>
-        <p>CONTACTO: bienestar@cirsubgn.org></p>
-      </div>
-    </section>
+              <script type="text/javascript">
+                emailjs.init('EC8SsvlUQoezMBnyf')
+              </script>
 
-
-
-    <section class="container">
-      <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="hijo"><strong>SUBSIDIO POR
-          HIJO</strong></h1>
-      <div class="row">
-        <img width="400" height="400" src="/images/hijo.jpeg"><br>
-        <h2 class="mt-5"><strong>Nacimiento</strong></h2>: En los casos en que al momento del alumbramiento ambos padres
-        fueran socios titulares de la Mutual, el beneficio se liquidará a ambos.</p>
-        <p>Reputase como nacimientos, aquellos alumbramientos que hayan sido inscriptos en el Registro Civil o que
-          estuvieren comprendidos en el Artículo 73 del Código Civil de la Nación. Cuando se produzcan alumbramientos
-          múltiples, se otorgará el beneficio por cada uno de ellos. -Art.4-</p>
-        <h2><strong>Reconocimiento de hijos:</strong></h2>
-        <p>Se reconocieran como tales, aquellos casos que se encuentren inscriptos en el Registro Civil. -Art.5-</p>
-        <h2><strong>Adopción:</strong></h2>
-        <p>Se reconocerán únicamente como válidas las adopciones simples o plenas que se encuentren otorgadas por
-          sentencia judicial firme. La guarda o tenencia legal a cargo no dará derecho al beneficio.
-          –Art.6-<br>———————————————————————————————————————————————————</p>
-        <h2><strong>Percepción de cualquiera de los beneficios:</strong></h2>
-        <p>el asociado deberá encontrarse al día con el pago de la cuota social en el momento de acaecido el
-          acontecimiento, no estar cumpliendo el período de carencia al que se refiere el artículo 12 del presente.
-          –Art.7-</p>
-        <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la presentación
-          de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o Juzgado, según
-          corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el certificado de
-          nacimiento del menor adoptado. –Art.8-</p>
-        <h2><strong>Plazo de presentación:</strong></h2>
-        <p> beneficio establecido en el presente reglamento debe ser requerido por el socio antes de trasncurrido un (1)
-          año, a contar desde el momento en que ocurrió el acontecimiento, vencido ese plazo se perderá todo derecho a
-          tal fin, se tomará como válida la fecha de recepción en Mesa de Entrada o del matasellos del correo cuando se
-          envíe por correo electrónico.&nbsp; -Art.10-</p>
-        <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
-          fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
-        <h2><strong>Carencia:</strong></h2>
-        <p>Para acceder al beneficio, el asociado deberá tener un antigüedad mínima como tal, de tres (3) meses al
-          momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la carencia se extenderá a seis (6)
-          meses. -Art.12-</p>
-        <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
-          socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
-        <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los recursos
-          provenientes de la cuita social. –Art. 14-</p>
-        <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus decisiones
-          podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación. -Art.15-</p>
-        <p>CONTACTO: bienestar@cirsubgn.org></p>
-      </div>
-    </section>
-
-    <section class="container">
-      <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="sepelio">SUBSIDIO POR SEPELIO</h1>
-      <div class="row">
-        <img width="600" height="400" src="/images/sepelio.jpeg">
-        <h2 class="mt-5">ANTE UN FALLECIMIENTO COMUNÍQUESE LAS 24 HORAS<br> AL TELÉFONO 0800-888-7656</h2>
-        <h2><strong>Servicio de sepelio y un subsidio por fallecimiento del socio titular o familiar</strong>.</h2>
-        <p>La cobertura comprende al titular y grupo familiar integrado por la esposa (en caso de concubinato se tendrá
-          en cuenta lo contemplado en la resolución Nº 215/75 I.N.O.S.), las hijas solteras hasta los 21 años y los
-          hijos solteros hasta los 18; estos últimos que no tengan hijos a cargo. Las hijos o hijos incapacitados, sin
-          límite de edad. Los padres del socio soltero, (sin hijos a cargo) se los considera como grupo familiar.</p>
-        <p>En caso de no hacer uso del servicio, el socio titular y o deudos, podrán solicitar el reintegro por gastos,
-          (se tendrán en cuenta los montos pre-establecidos por la mutual), presentando la documentación que
-          correspondiere.</p>
+            </div> -->
+          </section>
+        </div>
         <section class="container">
-          <h2>
-            Para una mejor atención complete con los datos del fallecido y envie el formulario que está a continuación
-          </h2>
-          <div class="card-form card p-4 mb-4"
-            style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
-            <!--  formulario sepelio -->
-            <form class="row g-3" name="formulario" method="post" action="mailto:bienestar@cirsubgn.org">
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Código Estadistico</label>
-                <input type="text" class="form-control" id="validationDefault01" value="N° de código" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Situación</label>
-                <select class="form-select" aria-label="Disabled select example">
-                  <option selected>Selecione su Situación</option>
-                  <option value="1">En Actividad</option>
-                  <option value="2">Retirado</option>
-                  <option value="3">Empleado</option>
-                </select>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Número de documento</label>
-                <input type="text" class="form-control" id="validationDefault02" value="xxxxxxxx" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationCustom01" value="xxxxxxx" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Nombres</label>
-                <input type="text" class="form-control" id="validationCustom02" value="xxxxxx" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefault04" class="form-label">Teléfono Celular</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="d-flex justify-content-center ">
-                <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
-              </div>
-            </form>
+          <h1 class="" style="color: darkgreen;font-size:4rem;text-align:center " id="asesoramiento">
+            <strong>ASESORAMIENTO
+              CONTABLE</strong>
+          </h1>
+          <div class="row">
+            <img width="600" height="400" src="/images/financiero.jpeg">
+            <h3 class="mt-5">La <strong>Mutual</strong> tiene el agrado de informarles sobre este nuevo servicio
+              gratuito
+              que le posibilitará al socio ganar, ahorrar e invertir dinero.</h3>
+            <h3 class="mt-3" style="color: darkgreen;font-size:4rem;"><strong>¿Cómo funciona?</strong></h3><br><br>
+            <h3>Es muy simple. Cuando el socio solicite este beneficio, se le asignará un contador que le realizará un
+              orden
+              en sus gastos de todos los meses. Con este seguimiento, el socio podrá ahorrar gran parte del dinero que
+              hoy
+              destina al pago de impuestos y servicios. A su vez, será asesorado en todas las dudas y consultas que le
+              surjan para que no se vea afectado su salario mes a mes. Por este trabajo no se cobran honorarios de
+              ningún
+              tipo. Comunicate con nuestro asesor y empezá a hacer rendir su sueldo.</h3>
+            <em>CONTACTO:&nbsp; Carlos Piccardo // Mail:&nbsp;carlos@segaconsultores.com&nbsp; // Teléfono: (11)
+              2192-5427</em>
+          </div>
         </section>
-      </div>
 
-    </section>
-    <script type="text/javascript">
-      (function () {
-        var options = {
-          whatsapp: "+54 9 11 76429930", // WhatsApp number
-          call_to_action: "Necesitas ayuda?", // Call to action
-          position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-      })();
-    </script>
+        <section class="container">
+          <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="juridico">
+            <strong>ASESORAMIENTO
+              JURIDICO</strong>
+          </h1>
+          <div class="row">
+            <img width="600" height="400" src="/images/asesoramiento-juridico.jpeg">
+            <h3>Todos los socios del Círculo de Suboficiales de Gendarmería Nacional podrán contar con el servicio de
+              consultoría jurídica, las 24 hs. y de forma gratuita.</p>
+              <p>El servicio cubre consultas de carácter profesional y de salud: esto significa que los socios podrán
+                ser
+                asesorados sobre cuestiones ligadas a su labor, y ante eventualidades que le puedan surgir producto de
+                la
+                pandemia por COVID-19.
+            </h3>
+            <p>CONTACTOS: Mail: legales@cirsubgn.org // Tel: (11) 5589-7211 / (11) 3838-4701 /</p>
+            <p>*Esta mutual exime a sus asociados del pago de honorarios en casos de ART.</p>
+          </div>
+        </section>
+
+        <section class="container">
+          <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="bodas"><strong>BENEFICIO POR
+              BODAS
+              DE ORO</strong></h1>
+          <div class="row">
+            <img width="600" height="400" src="/images/bodas.jpeg"><br>
+            <h3 class="mt-5">Cuando ambos cónyuges sean asociados a la Mutual Círculo de Suboficiales de Gendarmería
+              Nacional, se liquidará el beneficio a cada uno de los contrayentes, y se otorgarán diez (10) días de
+              alojamiento en cualquier lugar del país, teniendo en cuenta lo establecido en el Reglamento de Subsidios
+              por
+              Casamiento y Bodas de Oro. -Art. 3-
+              <p><strong>Percepción de cualquiera de los beneficios:</strong> el asociado deberá encontrarse al día con
+                el
+                pago de la cuota social en el momento de acaecido el acontecimiento, no estar cumpliendo el período de
+                carencia al que se refiere el artículo 12 del presente. –Art.7-</p>
+              <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la
+                presentación de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o
+                Juzgado,
+                según corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el
+                certificado de nacimiento del menor adoptado. –Art.8-</p>
+              <p><strong>Plazo de presentación:</strong>el beneficio establecido en el presente reglamento debe ser
+                requerido por el socio antes de trasncurrido un (1) año, a contar desde el momento en que ocurrió el
+                acontecimiento, vencido ese plazo se perderá todo derecho a tal fin, se tomará como válida la fecha de
+                recepción en Mesa de Entrada o del matasellos del correo cuando se envíe por correo electrónico.&nbsp;
+                -Art.10-</p>
+              <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
+                fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
+              <p><strong>Carencia</strong>: Para acceder al beneficio, el asociado deberá tener un antigüedad mínima
+                como
+                tal, de tres (3) meses al momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la
+                carencia se extenderá a seis (6) meses. -Art.12-</p>
+              <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
+                socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
+              <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los
+                recursos
+                provenientes de la cuota social. –Art. 14-</p>
+              <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus
+                decisiones
+                podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación.
+                -Art.15-
+              </p>
+              <p>CONTACTO</u>: bienestar@cirsubgn.org</p>
+            </h3>
+          </div>
+        </section>
 
 
-  </main>
+        <section class="container">
+          <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="casamiento"><strong>SUBSIDIO
+              POR
+              CASAMIENTO</strong></h1>
+          <div class="row">
+            <img width="600" height="400" src="/images/casamiento.jpeg"><br>
+            <p>Si ambos cónyuges son&nbsp;asociados de la Mutual Círculo de Suboficiales de Gendarmería Nacional, se
+              liquidará el beneficio a cada uno de los contrayentes, teniendo en cuenta lo&nbsp; establecido en el
+              Reglamento de Subsidios por Casamiento y Bodas de Oro.</p>
+            <p>A cada socio que perciba el subsidio se le otorgará&nbsp;diez (10) días de alojamiento en cualquier lugar
+              del
+              país. -Art. 3-</p>
+            <p>En caso&nbsp;de que ambos cónyuges estén afiliados a la Mutual, el beneficio será solo por diez (10)
+              días.&nbsp;</p>
+            <p><strong>Percepción de cualquiera de los beneficios:</strong>&nbsp;el asociado deberá encontrarse al día
+              con
+              el pago de la cuota social en el momento de acaecido el acontecimiento, no estar cumpliendo el período de
+              carencia al que se refiere el artículo 12 del presente. –Art.7-</p>
+            <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la
+              presentación
+              de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o Juzgado, según
+              corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el certificado
+              de
+              nacimiento del menor adoptado. –Art.8-</p>
+            <p><strong>Plazo de presentación:&nbsp;</strong>el beneficio establecido en el presente reglamento debe ser
+              requerido por el socio antes de transcurrido un (1) año, a contar desde el momento en que ocurrió el
+              acontecimiento, vencido ese plazo se perderá todo derecho a tal fin, se tomará como válida la fecha de
+              recepción en Mesa de Entrada o del matasellos del correo cuando se envíe por correo electrónico.&nbsp;
+              -Art.10-</p>
+            <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
+              fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
+            <p><strong>Carencia</strong>: Para acceder al beneficio, el asociado deberá tener un antigüedad mínima como
+              tal,
+              de tres (3) meses al momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la carencia
+              se
+              extenderá a seis (6) meses. -Art.12-</p>
+            <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
+              socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
+            <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los
+              recursos
+              provenientes de la cuita social. –Art. 14-</p>
+            <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus decisiones
+              podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación. -Art.15
+            </p>
+            <p>CONTACTO: bienestar@cirsubgn.org></p>
+          </div>
+        </section>
 
 
-    <!-- Footer -->
-    <%- include('partials/footer.ejs')%>
-    <!-- Footer -->
 
-    <!-- SCRIPTS -->
-    <%- include('partials/scripts.ejs')%>
-</body>
+        <section class="container">
+          <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="hijo"><strong>SUBSIDIO POR
+              HIJO</strong></h1>
+          <div class="row">
+            <img width="400" height="400" src="/images/hijo.jpeg"><br>
+            <h2 class="mt-5"><strong>Nacimiento</strong></h2>: En los casos en que al momento del alumbramiento ambos
+            padres
+            fueran socios titulares de la Mutual, el beneficio se liquidará a ambos.</p>
+            <p>Reputase como nacimientos, aquellos alumbramientos que hayan sido inscriptos en el Registro Civil o que
+              estuvieren comprendidos en el Artículo 73 del Código Civil de la Nación. Cuando se produzcan
+              alumbramientos
+              múltiples, se otorgará el beneficio por cada uno de ellos. -Art.4-</p>
+            <h2><strong>Reconocimiento de hijos:</strong></h2>
+            <p>Se reconocieran como tales, aquellos casos que se encuentren inscriptos en el Registro Civil. -Art.5-</p>
+            <h2><strong>Adopción:</strong></h2>
+            <p>Se reconocerán únicamente como válidas las adopciones simples o plenas que se encuentren otorgadas por
+              sentencia judicial firme. La guarda o tenencia legal a cargo no dará derecho al beneficio.
+              –Art.6-<br>———————————————————————————————————————————————————</p>
+            <h2><strong>Percepción de cualquiera de los beneficios:</strong></h2>
+            <p>el asociado deberá encontrarse al día con el pago de la cuota social en el momento de acaecido el
+              acontecimiento, no estar cumpliendo el período de carencia al que se refiere el artículo 12 del presente.
+              –Art.7-</p>
+            <p>El beneficio establecido en el presente reglamento, debe ser requerido por el socio, mediante la
+              presentación
+              de fotocopia autenticada de la documentación avalatoria extendida por Registro Civil o Juzgado, según
+              corresponda y recibo de haberes. En el caso de adopción se agregará a la sentencia judicial el certificado
+              de
+              nacimiento del menor adoptado. –Art.8-</p>
+            <h2><strong>Plazo de presentación:</strong></h2>
+            <p> beneficio establecido en el presente reglamento debe ser requerido por el socio antes de trasncurrido un
+              (1)
+              año, a contar desde el momento en que ocurrió el acontecimiento, vencido ese plazo se perderá todo derecho
+              a
+              tal fin, se tomará como válida la fecha de recepción en Mesa de Entrada o del matasellos del correo cuando
+              se
+              envíe por correo electrónico.&nbsp; -Art.10-</p>
+            <p>El Círculo podrá aceptar como válidas las presentaciones fuera de término, cuando se demuestre
+              fehacientemente documentado que la demora responde a causales no imputables al socio. -Art.11-</p>
+            <h2><strong>Carencia:</strong></h2>
+            <p>Para acceder al beneficio, el asociado deberá tener un antigüedad mínima como tal, de tres (3) meses al
+              momento de ocurrido el acontecimiento. Cuando se trate de re afiliación, la carencia se extenderá a seis
+              (6)
+              meses. -Art.12-</p>
+            <p>El derecho a la percepción del beneficio prescribirá al año de efectuado el requerimiento por parte del
+              socio, si la falta de su liquidación respondiera a causas no imputables a la Mutual. -Art.13-</p>
+            <p>La erogación que demande el beneficio establecido en el presente Reglamento será atendido con los
+              recursos
+              provenientes de la cuita social. –Art. 14-</p>
+            <p>Los casos no previstos en el presente Reglamento serán resueltos por el Órgano Directivo y sus decisiones
+              podrán ser apeladas por el socio antes de trascurridos los noventa (90) días de su notificación. -Art.15-
+            </p>
+            <p>CONTACTO: bienestar@cirsubgn.org></p>
+          </div>
+        </section>
 
-</html>
+        <section class="container">
+          <h1 class="mt-5" style="color: darkgreen;font-size:4rem;text-align:center " id="sepelio">SUBSIDIO POR SEPELIO
+          </h1>
+          <div class="row">
+            <img width="600" height="400" src="/images/sepelio.jpeg">
+            <h2 class="mt-5">ANTE UN FALLECIMIENTO COMUNÍQUESE LAS 24 HORAS<br> AL TELÉFONO 0800-888-7656</h2>
+            <h2><strong>Servicio de sepelio y un subsidio por fallecimiento del socio titular o familiar</strong>.</h2>
+            <p>La cobertura comprende al titular y grupo familiar integrado por la esposa (en caso de concubinato se
+              tendrá
+              en cuenta lo contemplado en la resolución Nº 215/75 I.N.O.S.), las hijas solteras hasta los 21 años y los
+              hijos solteros hasta los 18; estos últimos que no tengan hijos a cargo. Las hijos o hijos incapacitados,
+              sin
+              límite de edad. Los padres del socio soltero, (sin hijos a cargo) se los considera como grupo familiar.
+            </p>
+            <p>En caso de no hacer uso del servicio, el socio titular y o deudos, podrán solicitar el reintegro por
+              gastos,
+              (se tendrán en cuenta los montos pre-establecidos por la mutual), presentando la documentación que
+              correspondiere.</p>
+            <section class="container">
+              <h2>
+                Para una mejor atención complete con los datos del fallecido y envie el formulario que está a
+                continuación
+              </h2>
+              <div class="card-form card p-4 mb-4"
+                style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
+                <!--  formulario sepelio -->
+                <form class="row g-3" name="formulario" method="post" action="mailto:bienestar@cirsubgn.org">
+                  <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">Código Estadistico</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="N° de código" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">Situación</label>
+                    <select class="form-select" aria-label="Disabled select example">
+                      <option selected>Selecione su Situación</option>
+                      <option value="1">En Actividad</option>
+                      <option value="2">Retirado</option>
+                      <option value="3">Empleado</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Número de documento</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="xxxxxxxx" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="xxxxxxx" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="xxxxxx" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Teléfono Celular</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="d-flex justify-content-center ">
+                    <button class="btn btn-success" style="font-size:1.4rem;" type="submit">Enviar Formulario</button>
+                  </div>
+                </form>
+            </section>
+          </div>
+
+        </section>
+        <script type="text/javascript">
+            (function () {
+              var options = {
+                whatsapp: "+54 9 11 76429930", // WhatsApp number
+                call_to_action: "Necesitas ayuda?", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+              };
+              var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+              var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+              s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+              var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+
+
+      </main>
+
+
+      <!-- Footer -->
+      <%- include('partials/footer.ejs')%>
+        <!-- Footer -->
+
+        <!-- SCRIPTS -->
+        <%- include('partials/scripts.ejs')%>
+  </body>
+
+  <!-- <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+      .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_7mpt22z';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar Formulario';
+            alert('Enviado!');
+          }, (err) => {
+            btn.value = 'Enviar Formulario';
+            alert(JSON.stringify(err));
+          });
+      });
+  </script> -->
+
+  </html>
