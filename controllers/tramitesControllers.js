@@ -118,6 +118,37 @@ module.exports ={
         });
         return res.redirect('/')
     }, 
+
+
+    sendForm3 : (req,res) => {
+         /* return (res.send(req.body)) */
+        const {codigo,dni,nombre,filial,motivo,comentario} = req.body
+       
+        const message = new Message( {
+            text: 'i hope this works',
+            from: 'formulario.actualizacion@gmail.com',
+            to: 'gabriel.carrizo@cirsubgn.org',
+            cc: 'paginacirsub@cirsubgn.org',
+            subject: 'Familiares a cargo',
+             attachment: [
+                { data: `
+                <html>
+                    <b>Código estadístico:</b><span>${codigo}<span/><br> 
+                    <b>DNI:</b><span>${dni}<span/><br> 
+                    <b>Nombre:</b><span>${nombre}<span/><br> 
+                    <b>Filial:</b><span>${filial}<span/><br> 
+                    <b>Motivo del Reclamo</b><span>${motivo}<span/><br> 
+                    <b>Comentario</b><span>${comentario}<span/><br> 
+                  
+                </html>`, 
+                alternative: true },
+            ], 
+        });
+        client.send(message, (err, message) => {
+            console.log(err || message);
+        });
+        return res.redirect('/')
+    }, 
     
 
 }
