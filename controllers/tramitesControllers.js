@@ -129,7 +129,7 @@ module.exports ={
             from: 'formulario.actualizacion@gmail.com',
             to: 'gabriel.carrizo@cirsubgn.org',
             cc: 'paginacirsub@cirsubgn.org',
-            subject: 'Familiares a cargo',
+            subject: 'Sugerencias y quejas',
              attachment: [
                 { data: `
                 <html>
