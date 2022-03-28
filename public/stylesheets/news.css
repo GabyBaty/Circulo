@@ -1,0 +1,15 @@
+@media (max-width: 576px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        
+      }
+
+      .card-new{
+         
+          padding-left: 3rem;
+      }
+    }

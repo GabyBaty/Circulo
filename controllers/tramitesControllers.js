@@ -149,6 +149,38 @@ module.exports ={
         });
         return res.redirect('/')
     }, 
+
+
+    sendForm4 : (req,res) => {
+        /* return (res.send(req.body)) */
+       const {codigo,situacion,dni,apellido,nombre,telefono,movil} = req.body
+      
+       const message = new Message( {
+           text: 'i hope this works',
+           from: 'formulario.actualizacion@gmail.com',
+           to: 'sepelio@cirsubgn.org',
+           cc: 'paginacirsub@cirsubgn.org',
+           subject: 'Servico de sepelio',
+            attachment: [
+               { data: `
+               <html>
+                   <b>Código estadístico:</b><span>${codigo}<span/><br>
+                   <b>Situación</b><span>${situacion}<span/><br>  
+                   <b>DNI:</b><span>${dni}<span/><br> 
+                   <b>Apellido</b><span>${apellido}<span/><br> 
+                   <b>Nombre:</b><span>${nombre}<span/><br> 
+                   <b>Teléfono fijo</b><span>${telefono}<span/><br> 
+                   <b>Telefono celular</b><span>${movil}<span/><br>
+                 
+               </html>`, 
+               alternative: true },
+           ], 
+       });
+       client.send(message, (err, message) => {
+           console.log(err || message);
+       });
+       return res.redirect('/')
+   }, 
     
 
 }
