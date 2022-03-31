@@ -1,0 +1,16 @@
+@media (max-width: 576px){
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .container{
+          width: 90%;
+          padding: 2rem;
+          margin: 2rem;
+
+      }
+    }
