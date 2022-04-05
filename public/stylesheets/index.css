@@ -31,6 +31,11 @@ p {
   
 }
 
+.padre2 .container .card{
+  width: 30%;
+}
+
+
 @media (max-width: 576px){
 
 .card .embed {
@@ -39,6 +44,21 @@ p {
   padding-top: 1rem;
   width: 100%;
   
+}
+
+
+.padre2 .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.padre2 .container .card{
+   width: 100%;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   
 }
 }
 
@@ -69,10 +89,15 @@ p {
 
 .carrousel {
   display: none;
+  border-style: double;
+  width: 50%;
+  position: relative;
+  margin: auto;
 }
 
 .noticias{
   display: block;
+  margin-top: 3rem;
 }
 
 
@@ -80,6 +105,8 @@ p {
 @media (min-width: 768px) {
   .carrousel {
     display: block;
+    position: relative;
+    
   }
   .noticias{
     display: block;
@@ -92,6 +119,15 @@ p {
  
  
 }
+
+@media (min-width: 576px){
+  .carrousel {
+    display: block;
+    position: relative;
+   
+  }
+}
+
 /*   CARROUSELL SLICKY */
 .carrousel_slicky {
     margin-top: 5rem;
@@ -108,7 +144,7 @@ p {
   }
 
   .carousel-item img {
-    height: 40rem;
+    width: 100%;
     display:flex;
     
   }
@@ -147,7 +183,25 @@ p {
     color: white;
   }
   
+ 
+  .padre .container .card{
+    width:28%;
+    padding-bottom: 2rem;
+    
+}
 
 
-
+.padre .container .card h3{
+    color: #32A455
+}
+.padre .container .card h3:hover{
+    color:#006400
+}
+.padre .container .card a:hover{
+    color:#32A455
+}
   
+
+.header-nav-links{
+  justify-content: space-evenly;
+}
