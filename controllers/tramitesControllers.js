@@ -127,7 +127,7 @@ module.exports ={
         const message = new Message( {
             text: 'i hope this works',
             from: 'formulario.actualizacion@gmail.com',
-            to: 'gabriel.carrizo@cirsubgn.org',
+            to: 'atencion.socio@cirsubgn.org',
             cc: 'paginacirsub@cirsubgn.org',
             subject: 'Sugerencias y quejas',
              attachment: [
