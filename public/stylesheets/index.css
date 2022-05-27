@@ -34,8 +34,6 @@ p {
 .padre2 .container .card{
   width: 30%;
 }
-
-
 @media (max-width: 576px){
 
 .card .embed {
