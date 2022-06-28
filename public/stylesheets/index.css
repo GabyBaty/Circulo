@@ -88,7 +88,7 @@ p {
 .carrousel {
   display: none;
  /*  border-style: double; */
-  width: 50%;
+  width: 60%;
   position: relative;
   margin: auto;
 }
@@ -102,6 +102,7 @@ p {
 
 @media (min-width: 768px) {
   .carrousel {
+    width: 80%;
     display: block;
     position: relative;
     
@@ -114,15 +115,28 @@ p {
   .card-asociate {
     justify-content: center;
   }
+
+  .carousel-item img {
+    width: 100%;
+    display:flex;
+    
+  }
  
  
 }
 
 @media (min-width: 576px){
   .carrousel {
+    width: 100;
     display: block;
     position: relative;
    
+  }
+
+  .carousel-item img {
+    width: 100%;
+    display:flex;
+    
   }
 }
 
