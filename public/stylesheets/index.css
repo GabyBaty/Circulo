@@ -87,7 +87,7 @@ p {
 
 .carrousel {
   display: none;
-  border-style: double;
+ /*  border-style: double; */
   width: 50%;
   position: relative;
   margin: auto;
