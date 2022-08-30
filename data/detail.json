@@ -1,6 +1,18 @@
 [
     {
         "id": 1,
+        "name": "Historia de nuestra Mutual ",
+        "date": "30/08/2022",
+        "autor": "por Martín Nahuel Pianelli",
+        "articulo": {
+            "p": [
+                "La historia del Circulo de Suboficiales de Gendarmeria Nacional se remonta a mediados del año 1951. Por ese entonces, un grupo de Suboficiales venia concibiendo la idea de constituir una Mutual con carácter de ayuda y protección recíproca, social y deportiva, a fin de poder reunir en ella a todos los Suboficiales de Gendarmeria Nacional, solicitando por este motivo al Director General de Gendarmeria Nacional la autorización necesaria y la designación de la Comisión Provisoria pro-constitución del Circulo. El 30 de Agosto de ese mismo año, considerada tan importante por los propios protagonistas, que más tarde la proclamarían comoo fecha oficial de fundación. Se autoriza el uso de un local en el 9no. piso del edificio donde funcionaba por ese entonces la Dirección de Sanidad de la Fuerza. Siendo su primera Sede Social y Adminitrativa la mansión ubicada en la esquina de la calle Ayacucho 265 de la Ciudad Autónoma de Buenos Aires, y se disponía a seguir creciendo día a día. En virtud que se se vislumbraba un constante crecimiento en el año 1953, se publica en los principales diarios de la época, un aviso solicitando inmuebles o terrenos para construir un Hotel u hogar de tránsito también, como se verá es el primer antecedente registrado del actual Hotel Tacuarí, en ese momento se produjo la oferta del Tigre Hotel en alquiler y su posterior adquisición, sirviendo como Sede un tiempo antes de trasladarse de la Sede de la Capital al Delta, pero quedaba alejado de la ciudad. Siendo este un impedimento, a fines de 1959 se consolida la adquisición no solamente del Edificio de Av. Rivadavia 5242/48, sino de otros inmuebles; trasladándose a la Capital la Sede Administrativa. Como respuesta a los avisos publicados en los periódicos durante el año 1961, estaba el edificio de la calle Hipólito Irigoyen 2942, conocido como Edificio 28 de Julio, siendo el 1 de Octubre el día de la habilitación definitiva el tan soñado Hotel de Transíto en Capital Federal. A través del Poder Ejecutivo se concedió un prestamo para la compra del terreno que hoy es Sede Central de la Mutual y el Hotel Tacuarí inaugurado éste último el 14 de Diciembre de 1974. A principios de 1967, se trasladó la sede administrativa del Circulo a la calle Tacuarí. A lo largo de los años, las Asambleas Ordinarias de Delegados fueron modificando artículos del Estatuto, en las cuales se exponen temas sobre los que informar, debatir y solucionar. Siendo su principal función la aprobación de las cuentas y el balance anual. Hoy es una Mutual seria que presta servicios en el marco de la economía social y solidaria en muchos casos no reintegrables, donaciones de todo tipo para y desde los socios, beneficios y servicios tales como asistencia en casos de fallecimiento, sepelio, farmacia y medicamentos, turismo, alojamiento y racionamiento, evacuación en caso de enfermedad como así también asistencia en centros asistenciales, no solamente en su Sede Central sino también en todas sus Filiales y Delegaciones en todo el interior del país que fueron gestándose a lo largo de ésta para la atención y contención de los Asociados a la misma ubicándose en los distintos puntos del país."
+            ]
+        },
+        "images": "71Anivesario.jpeg"
+    },
+    {
+        "id": 2,
         "name": "Se reactivan las ayudas económicas ",
         "date": "24/05/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -12,7 +24,7 @@
         "images": "comunicado.jpeg"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Circular-IOSFA ",
         "date": "07/04/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -24,7 +36,7 @@
         "images": "iofa.jpeg"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "10 de Marzo Feliz Aniversario ",
         "date": "10/03/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -36,7 +48,7 @@
         "images": "aniversario.jpeg"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Renovación con 'Sol Naciente'",
         "date": "25/02/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -48,7 +60,7 @@
         "images": "Renovacion.png"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Los 100 de Don Esteban Oscar Lopez",
         "date": "22/12/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -60,7 +72,7 @@
         "images": "los100.jpg"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Elecciones Generales para Delegados y Subdelegados",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -72,7 +84,7 @@
         "images": "elecciones2021.png"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Solicite ahora su Ayuda Económica",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -84,7 +96,7 @@
         "images": "Ayuda-economica.png"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Remodelación del EDIFICIO HOTEL TACUARÍ",
         "date": "27/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -96,7 +108,7 @@
         "images": "remodelacion.png"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Asamblea Ordinaria de Delegados",
         "date": "23/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -108,7 +120,7 @@
         "images": "noticia1.jpg"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Apoyo del Círculo de Suboficiales a un socio que competirá en Japón",
         "date": "25/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -120,7 +132,7 @@
         "images": "noticia2.jpg"
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Reencuentro en Sede Central",
         "date": "09/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -132,7 +144,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Vacaciones de invierno en Córdoba",
         "date": "27/07/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -144,7 +156,7 @@
         "images": "vacaciones.png"
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Alojamiento Sede Central",
         "date": "08/03/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -156,7 +168,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Trabajo de prevención tras el sismo en San Juan",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -168,7 +180,7 @@
         "images": "sismoSanJuan.png"
     },
     {
-        "id": 15,
+        "id": 16,
         "name": "Detienen a joven que viajaba con un arma de fuego casera",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -180,7 +192,7 @@
         "images": "Detencion.png"
     },
     {
-        "id": 16,
+        "id": 17,
         "name": "Secuestran casi 4 toneladas de marihuana abandonada entre la maleza",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -192,7 +204,7 @@
         "images": "marihuana.png"
     },
     {
-        "id": 17,
+        "id": 18,
         "name": "Reparación del frente del Edificio Sede Central",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -204,7 +216,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 18,
+        "id": 19,
         "name": "Hospedaje para la temporada 2020/2021 en Mar del Plata",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -216,7 +228,7 @@
         "images": "hospedajeMP2021.png"
     },
     {
-        "id": 19,
+        "id": 20,
         "name": "Nos equipamos para recibirlos pronto",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -228,7 +240,7 @@
         "images": "equipocovid.png"
     },
     {
-        "id": 20,
+        "id": 21,
         "name": "Trasladaba 7 kilos de cocaína en el tanque de nafta",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -240,7 +252,7 @@
         "images": "cocaina.png"
     },
     {
-        "id": 21,
+        "id": 22,
         "name": "Detienen a clan familiar con toneladas de droga",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -252,7 +264,7 @@
         "images": "clanfamiliar.png"
     },
     {
-        "id": 22,
+        "id": 23,
         "name": "Donación de ropa y alimentos en Formosa",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -264,7 +276,7 @@
         "images": "donacion.png"
     },
     {
-        "id": 23,
+        "id": 24,
         "name": "Miles de dólares y celulares",
         "date": "09/09/2021",
         "autor": "por Martín Nahuel Pianelli",
