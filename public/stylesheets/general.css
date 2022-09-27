@@ -299,6 +299,12 @@
     justify-content: space-between;
   }
 
+  .logo-wasap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (max-width: 900px) {
     .hamburger-menu-container {
       display: flex;
