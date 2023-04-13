@@ -1,6 +1,31 @@
-[
+[   
     {
         "id": 1,
+        "name": "Despide su gestión ",
+        "date": "08/04/2023",
+        "autor": "por Martín Nahuel Pianelli",
+        "articulo": {
+            "p": [
+                "Con la inminente Asamblea con renovación de autoridades; el presidente actual con segundo mandato cumplido Ramón Leguizamón, renuncia a postularse de nuevo y a manera de despedida, hace un resumen de su gestión y va preparando a la Mutual para generar el clima de camaradería y afecto que marca su espiritu fundacional. Solo la mutualidad organizada y el afecto mutuo prodigado a todos los gendarmes y sus familias, puede dar fuerza para sostener la entidad en pie; sortear la pandemia y guardar en el corazón esa sutil esperanza en que llegarán los buenos tiempos y que seguramente sera de la mano de las gestiones que vendrán."
+            ]
+        },
+        "images": "entrada.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Entrevista al Presidente, portal Social y Solidaria ",
+        "date": "08/04/2023",
+        "autor": "por Martín Nahuel Pianelli",
+        "articulo": {
+            "p": [
+                "En reciente entrevista realizada al Sub Oficial Mayor Ramón Leguizamón por el medio Social y Solidaria comentó que el Circulo próximamente tendrá elecciones, a las que no se presentará por un tercer mandato. Augura una buena elección el dia 23 de Mayo y pide a todos los socios que colaboren y que vayan a la urna a votar, porque esto es una oportunidad para la entidad, y también se disculpa porque su conducción se vio limitada por el grado de aceptación que tuvo su gestión, y se siente orgulloso al entregar una entidad con todo su patrimonio"
+            ]
+        },
+        "images": "entrevista.jpeg"
+    },
+
+    {
+        "id": 3,
         "name": "Historia de nuestra Mutual ",
         "date": "30/08/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -12,7 +37,7 @@
         "images": "71Anivesario.jpeg"
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Se reactivan las ayudas económicas ",
         "date": "24/05/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -24,7 +49,7 @@
         "images": "comunicado.jpeg"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Circular-IOSFA ",
         "date": "07/04/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -36,7 +61,7 @@
         "images": "iofa.jpeg"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "10 de Marzo Feliz Aniversario ",
         "date": "10/03/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -48,7 +73,7 @@
         "images": "aniversario.jpeg"
     },
     {
-        "id": 5,
+        "id": 7,
         "name": "Renovación con 'Sol Naciente'",
         "date": "25/02/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -60,7 +85,7 @@
         "images": "Renovacion.png"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Los 100 de Don Esteban Oscar Lopez",
         "date": "22/12/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -72,7 +97,7 @@
         "images": "los100.jpg"
     },
     {
-        "id": 7,
+        "id": 9,
         "name": "Elecciones Generales para Delegados y Subdelegados",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -84,7 +109,7 @@
         "images": "elecciones2021.png"
     },
     {
-        "id": 8,
+        "id": 10,
         "name": "Solicite ahora su Ayuda Económica",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -96,7 +121,7 @@
         "images": "Ayuda-economica.png"
     },
     {
-        "id": 9,
+        "id": 11,
         "name": "Remodelación del EDIFICIO HOTEL TACUARÍ",
         "date": "27/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -108,7 +133,7 @@
         "images": "remodelacion.png"
     },
     {
-        "id": 10,
+        "id": 12,
         "name": "Asamblea Ordinaria de Delegados",
         "date": "23/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -120,7 +145,7 @@
         "images": "noticia1.jpg"
     },
     {
-        "id": 11,
+        "id": 13,
         "name": "Apoyo del Círculo de Suboficiales a un socio que competirá en Japón",
         "date": "25/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -132,7 +157,7 @@
         "images": "noticia2.jpg"
     },
     {
-        "id": 12,
+        "id": 14,
         "name": "Reencuentro en Sede Central",
         "date": "09/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -144,7 +169,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 13,
+        "id": 15,
         "name": "Vacaciones de invierno en Córdoba",
         "date": "27/07/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -156,7 +181,7 @@
         "images": "vacaciones.png"
     },
     {
-        "id": 14,
+        "id": 16,
         "name": "Alojamiento Sede Central",
         "date": "08/03/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -168,7 +193,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 15,
+        "id": 17,
         "name": "Trabajo de prevención tras el sismo en San Juan",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -180,7 +205,7 @@
         "images": "sismoSanJuan.png"
     },
     {
-        "id": 16,
+        "id": 18,
         "name": "Detienen a joven que viajaba con un arma de fuego casera",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -192,7 +217,7 @@
         "images": "Detencion.png"
     },
     {
-        "id": 17,
+        "id": 19,
         "name": "Secuestran casi 4 toneladas de marihuana abandonada entre la maleza",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -204,7 +229,7 @@
         "images": "marihuana.png"
     },
     {
-        "id": 18,
+        "id": 20,
         "name": "Reparación del frente del Edificio Sede Central",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -216,7 +241,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 19,
+        "id": 21,
         "name": "Hospedaje para la temporada 2020/2021 en Mar del Plata",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -228,7 +253,7 @@
         "images": "hospedajeMP2021.png"
     },
     {
-        "id": 20,
+        "id": 22,
         "name": "Nos equipamos para recibirlos pronto",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -240,7 +265,7 @@
         "images": "equipocovid.png"
     },
     {
-        "id": 21,
+        "id": 23,
         "name": "Trasladaba 7 kilos de cocaína en el tanque de nafta",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -252,7 +277,7 @@
         "images": "cocaina.png"
     },
     {
-        "id": 22,
+        "id": 24,
         "name": "Detienen a clan familiar con toneladas de droga",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -264,7 +289,7 @@
         "images": "clanfamiliar.png"
     },
     {
-        "id": 23,
+        "id": 25,
         "name": "Donación de ropa y alimentos en Formosa",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -276,7 +301,7 @@
         "images": "donacion.png"
     },
     {
-        "id": 24,
+        "id": 26,
         "name": "Miles de dólares y celulares",
         "date": "09/09/2021",
         "autor": "por Martín Nahuel Pianelli",
