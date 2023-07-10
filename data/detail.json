@@ -1,4 +1,17 @@
-[
+[   
+    {
+        "id": 1,
+        "name": "Aclaración respecto a fiesta en sede Mutual",
+        "date": "03/07/2023",
+        "autor": "por Martín Nahuel Pianelli",
+        "articulo": {
+            "p": [
+                ""
+            ]
+        },
+        "images": "aclaracion.jpeg"
+    }, 
+
     {
         "id": 1,
         "name": "Visita Filial Resistencia ",
