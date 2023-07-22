@@ -78,5 +78,20 @@ module.exports = {
         })     
         
     },
+    concepcion:(req,res)=> {
+        return res.render ('concepcionUru',{
+            title: 'CIRCULO-CONCEPCION'
+        })
+    },
+    formosa:(req,res)=> {
+        return res.render ('formosaF',{
+            title: 'CIRCULO-FORMOSA'
+        })
+    },
+    posadas:(req,res)=> {
+        return res.render ('posadasF',{
+            title: 'CIRCULO-POSADAS'
+        })
+    },
    
 }
