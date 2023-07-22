@@ -49,9 +49,9 @@ app.use('/evacuacion',evacuationRouter);
 app.use('/contactos',contactoRouter);
 app.use('/detailnews',detailRouter);
 app.use('/tramites',tramiteRouter);
-app.use('/concepcion',concepcionRouter);
-app.use('/formosa',formosaRouter);
-app.use('/posadas',posadasRouter);
+app.use('/concepcionUru',concepcionRouter);
+app.use('/formosaF',formosaRouter);
+app.use('/posadasF',posadasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
