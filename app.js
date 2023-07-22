@@ -17,6 +17,7 @@ var evacuationRouter=require('./routes/evacuation');
 var contactoRouter=require('./routes/contacto');
 var detailRouter=require('./routes/detail');
 var tramiteRouter=require('./routes/tramite');
+var concepcionRouter = require('./routes/concepcion');
 var  cors = require('cors');
  
 
@@ -46,6 +47,7 @@ app.use('/evacuacion',evacuationRouter);
 app.use('/contactos',contactoRouter);
 app.use('/detailnews',detailRouter);
 app.use('/tramites',tramiteRouter);
+app.use('/concepcion',concepcionRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
