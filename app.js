@@ -20,6 +20,8 @@ var tramiteRouter=require('./routes/tramite');
 var concepcionRouter = require('./routes/concepcion');
 var formosaRouter = require('./routes/formosa');
 var posadasRouter = require('./routes/posadas');
+var comodoroRouter = require('./routes/comodoro');
+var doradoRouter = require('./routes/dorado');
 var  cors = require('cors');
  
 
@@ -52,6 +54,8 @@ app.use('/tramites',tramiteRouter);
 app.use('/concepcionUru',concepcionRouter);
 app.use('/formosaF',formosaRouter);
 app.use('/posadasF',posadasRouter);
+app.use('/comodoros',comodoroRouter);
+app.use('/doradoF',doradoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

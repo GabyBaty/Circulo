@@ -93,5 +93,15 @@ module.exports = {
             title: 'CIRCULO-POSADAS'
         })
     },
+    comodoro:(req,res)=> {
+        return res.render ('comodoros',{
+            title: 'CIRCULO-COMODORO'
+        })
+    },
+    dorado:(req,res)=> {
+        return res.render ('doradoF',{
+            title: 'CIRCULO-DORADO'
+        })
+    },
    
 }
