@@ -25,7 +25,7 @@ var doradoRouter = require('./routes/dorado');
 var neuquenRouter = require('./routes/neuquen');
 var salutacionRouter = require('./routes/salutacion');
 var festejosRouter = require('./routes/festejos');
-var  cors = require('cors');
+var cors = require('cors');
  
 
 var app = express();
@@ -47,7 +47,7 @@ app.use('/news', newsRouter);
 app.use('/filial',filialesRouter);
 app.use('/wellness',bienestarRouter);
 app.use('/reservas',reservaRouter);
-app.use('/tour', tourRouter);
+app.use('/tour',tourRouter);
 app.use('/farmacias',farmaciaRouter);
 app.use('/delegados',delegadoRouter);
 app.use('/evacuacion',evacuationRouter);
