@@ -25,6 +25,7 @@ var doradoRouter = require('./routes/dorado');
 var neuquenRouter = require('./routes/neuquen');
 var salutacionRouter = require('./routes/salutacion');
 var festejosRouter = require('./routes/festejos');
+var saltaRouter = require('./routes/salta');
 var cors = require('cors');
  
 
@@ -62,6 +63,7 @@ app.use('/doradoF',doradoRouter);
 app.use('/neuquenF',neuquenRouter);
 app.use('/salutaciones',salutacionRouter);
 app.use('/festejo',festejosRouter);
+app.use('/saltaF',saltaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
