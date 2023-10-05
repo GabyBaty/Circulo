@@ -26,6 +26,10 @@ var neuquenRouter = require('./routes/neuquen');
 var salutacionRouter = require('./routes/salutacion');
 var festejosRouter = require('./routes/festejos');
 var saltaRouter = require('./routes/salta');
+var sanjuanRouter = require('./routes/sanjuan');
+var mendozaRouter = require('./routes/mendoza');
+var cordobaRouter = require('./routes/cordoba');
+var riogallegosRouter = require('./routes/riogallegos');
 var cors = require('cors');
  
 
@@ -64,6 +68,10 @@ app.use('/neuquenF',neuquenRouter);
 app.use('/salutaciones',salutacionRouter);
 app.use('/festejo',festejosRouter);
 app.use('/saltaF',saltaRouter);
+app.use('/sanjuanF',sanjuanRouter);
+app.use('/mendozaF',mendozaRouter);
+app.use('/cordobaF',cordobaRouter);
+app.use('/riogallegosF',riogallegosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
