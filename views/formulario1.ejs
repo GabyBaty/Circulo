@@ -1,0 +1,305 @@
+<%- include('partials/head.ejs')%>
+
+  <body>
+    <!--    HEADER -->
+
+    <%- include('partials/header.ejs')%>
+
+      <!-- MAIN -->
+
+      <!-- MAIN -->
+
+      <main class="sorteos">
+        <div class="container col-md-10 row text-center" style="margin:30px auto">
+            <h1><strong> AFILIACIÓN</strong></h1>
+        <div class="row mb-3">
+
+          <h3 class="mt-5">Asociate a la <strong>Mutual</strong> y pertenece a esta gran família que desde hace 70
+            años trabaja para el beneficio de todos los asociados. </h3>
+          <h3 class="mt-3" style="color: darkgreen;font-size:4rem;text-align:center "><strong>¿Cómo
+              afiliarte?</strong></h3><br><br>
+          <h3>Complete el formulario que está a continuación, haga click en el botón <strong>ENVIAR
+              FORMULARIO</strong>, estos datos serán verificados por un asesor y luego recibirá un mail confirmando
+            su afiliación.</h3>
+        </div>
+        <section class="container">
+          <div class="card-form card p-4 mb-4"
+            style="background-color:#cac278c0; box-shadow: 7px 13px 37px var(--color-negro);">
+            <!-- formulario -->
+            <form class="row g-3" id="form">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Código Estadistico</label>
+                <input name="codigo" type="text" class="form-control" id="validationDefault01"
+                  placeholder="N° de código" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Situación</label>
+                <select class="form-select" aria-label="Disabled select example" name="situacion">
+                  <option selected>Selecione su Situación</option>
+                  <option value="1">En Actividad</option>
+                  <option value="2">Retirado</option>
+                  <option value="3">Empleado</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Número de documento</label>
+                <input name="documento" type="text" class="form-control" id="validationDefault02"
+                  placeholder="N° de DNI" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Número de CUIL</label>
+                <input name="cuil" type="text" class="form-control" id="validationDefault02" placeholder="xx-xxxxxxxx-x"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Número de Socio</label>
+                <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Apellido</label>
+                <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
+                  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Nombres</label>
+                <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Grado</label>
+                <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Unidad</label>
+                <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
+                <div id="cid_7" class="form-input-wide jf-required">
+                  <div data-wrapper-react="true" class="extended notLiteMode">
+                    <input name="nacimiento" type="date" class="form-control fechainput"
+                      style="width: 200px; border-color:dimgrey; height: 30px;">
+                  </div>
+                </div>
+              </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault03" class="form-label">Provincia</label>
+                    <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Localidad</label>
+                    <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault03" class="form-label">Domicilio</label>
+                    <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Código Postal</label>
+                    <input name="cp" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
+                    <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault04" class="form-label">Teléfono Celular</label>
+                    <input name="celular" type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">E-mail</label>
+                    <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+                      required>
+                  </div>
+                  <div class="d-flex justify-content-center ">
+                  <input type="submit" id="button" value="Enviar Formulario" class="btn btn-success" style="font-size:1.4rem;" >
+            </form>
+
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+              emailjs.init('EC8SsvlUQoezMBnyf')
+            </script>
+            <!--  <form id="form"> 
+          <div class="field">
+            <label for="from_name">from_name</label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
+          <div class="field">
+            <label for="to_name">to_name</label>
+            <input type="text" name="to_name" id="to_name">
+          </div>
+          <div class="field">
+            <label for="message">message</label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to">reply_to</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+        
+          <input type="submit" id="button" value="Send Email" >
+        </form>  -->
+            <!-- <form id="form">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Código Estadistico</label>
+            <input name="codigo" type="text" class="form-control" id="validationDefault01"
+              placeholder="N° de código" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Situación</label>
+            <select class="form-select" aria-label="Disabled select example" name="situacion">
+              <option selected>Selecione su Situación</option>
+              <option value="1">En Actividad</option>
+              <option value="2">Retirado</option>
+              <option value="3">Empleado</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Número de documento</label>
+            <input name="documento" type="text" class="form-control" id="validationDefault02"
+              placeholder="N° de DNI" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Número de CUIL</label>
+            <input name="cuil" type="text" class="form-control" id="validationDefault02"
+              placeholder="xx-xxxxxxxx-x" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Número de Socio</label>
+            <input name="socio" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+              required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Apellido</label>
+            <input name="apellido" type="text" class="form-control" id="validationCustom01" placeholder="xxxxxxx"
+              required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Nombres</label>
+            <input name="nombre" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" name="nombre"
+              required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Grado</label>
+            <input name="grado" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx" name="grado"
+              required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Unidad</label>
+            <input name="unidad" type="text" class="form-control" id="validationCustom02" placeholder="xxxxx"
+              required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Fecha de Nacimiento</label>
+            <div id="cid_7" class="form-input-wide jf-required">
+              <div data-wrapper-react="true" class="extended notLiteMode">
+                <input name="nacimiento" type="date" class="form-control fechainput"
+                  style="width: 200px; border-color:dimgrey; height: 30px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Provincia</label>
+            <input name="provincia" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault04" class="form-label">Localidad</label>
+            <input name="localidad" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Domicilio</label>
+            <input name="domicilio" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault04" class="form-label">Código Postal</label>
+            <input name="cp" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Teléfono Fijo</label>
+            <input name="telefono" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault04" class="form-label">Teléfono Celular</label>
+            <input name="celular" type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">E-mail</label>
+            <input name="mail" type="text" class="form-control" id="validationDefault02" placeholder="xxxxxx"
+              required>
+          </div>
+          <div class="d-flex justify-content-center ">
+            <input type="submit" id="button" value="Send Email" >
+          </div>
+        </form>  -->
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+              emailjs.init('EC8SsvlUQoezMBnyf')
+            </script>
+
+          </div>
+        </section>
+        <script type="text/javascript">
+            (function () {
+              var options = {
+                whatsapp: "+54 9 11 76429930", // WhatsApp number
+                call_to_action: "Necesitas ayuda?", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+              };
+              var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+              var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+              s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+              var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+      </main>
+
+      <!-- Footer -->
+      <%- include('partials/footer.ejs')%>
+        <!-- Footer -->
+
+        <!-- SCRIPTS -->
+        <%- include('partials/scripts.ejs')%>
+
+  </body>
+
+  <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+      .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_0dndodo';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar Formulario';
+            alert('Enviando!');
+          }, (err) => {
+            btn.value = 'Enviar Formulario';
+            alert(JSON.stringify(err));
+          });
+      });
+
+  </script>
+
+  </html>

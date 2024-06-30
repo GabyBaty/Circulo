@@ -55,7 +55,7 @@ module.exports = {
         })
     },
     formulario:(req,res)=> {
-        return res.render ('formularioEj',{
+        return res.render ('formulario1',{
             title: 'CIRCULO-FORMULARIO'
         })
     },
@@ -101,6 +101,16 @@ module.exports = {
     dorado:(req,res)=> {
         return res.render ('doradoF',{
             title: 'CIRCULO-DORADO'
+        })
+    },
+    alta:(req,res)=> {
+        return res.render ('altaFamiliar',{
+            title: 'CIRCULO-ALTA.FAMILIAR'
+        })
+    },
+    actualizacion:(req,res)=> {
+        return res.render ('actualizacionD',{
+            title: 'CIRCULO-ACTUALIZACION'
         })
     },
    

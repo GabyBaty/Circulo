@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var{index,about,contacto,filiales,bienestar,reserva,tour,farmacia,delegado,evacuation,sorteos,formulario,formularios,tramite,/* sendForm3 */} = require('../controllers/indexControllers');
+var{index,about,contacto,filiales,bienestar,reserva,tour,farmacia,delegado,evacuation,sorteos,formulario,tramite,alta,actualizacion} = require('../controllers/indexControllers');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -17,9 +17,9 @@ router.get('./farmacias',farmacia);
 router.get('./delegados',delegado);
 router.get('./evacuacion',evacuation);
 router.get('/sorteos',sorteos);
-router.get('/formulario',formulario);
-router.get('/formularios',formularios);
+router.get('/formulario1',formulario);
 router.get('/tramites',tramite);
-/* router.post('/tramites3',sendForm3); */
+router.get('/altaFamiliar',alta);
+router.get('/actualizacionD',actualizacion);
 
 module.exports = router;

@@ -30,6 +30,9 @@ var sanjuanRouter = require('./routes/sanjuan');
 var mendozaRouter = require('./routes/mendoza');
 var cordobaRouter = require('./routes/cordoba');
 var riogallegosRouter = require('./routes/riogallegos');
+var formularioRouter = require('./routes/formulario');
+var altafamiliarRouter = require('./routes/altafamiliar');
+var actualizacionesRouter = require('./routes/actualizaciones');
 var cors = require('cors');
  
 
@@ -72,6 +75,9 @@ app.use('/sanjuanF',sanjuanRouter);
 app.use('/mendozaF',mendozaRouter);
 app.use('/cordobaF',cordobaRouter);
 app.use('/riogallegosF',riogallegosRouter);
+app.use('/formulario1',formularioRouter);
+app.use('/altaFamiliar',altafamiliarRouter);
+app.use('/actualizacionD',actualizacionesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
