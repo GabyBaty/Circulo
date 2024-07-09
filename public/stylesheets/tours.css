@@ -17,4 +17,7 @@
           margin: 2rem;
 
       }
+      .turismo2 .card:hover{
+        transform: scale(2.5);
+      }
     }
