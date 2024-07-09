@@ -1,115 +1,69 @@
 <%- include('partials/head.ejs')%>
+  <!--    HEADER -->
+
   <body>
-      <!--    HEADER -->
+    <%- include('partials/header.ejs')%>
 
-      <%- include('partials/header.ejs')%>
-  <main>
-      <!--Botón ir hacia arriba-->
- 
+      <main style="padding-top: 1rem;">
+        <!--Botón ir hacia arriba-->
 
+    <!--     <section>
+          <div class="card-body">
 
-      <div class="Bienvenida">
-        <p style="font-size: 30px;line-height: 1.2;color:rgb(38, 146, 38);letter-spacing: 2px;font-weight: 600; padding: 1rem;"> Bienvenido a la Mutual Círculo de <br>Suboficiales de<br>Gendarmería Nacional</p>
-      </div>
+            <img src="/images/filiales/tacuarí.jpg" width="1400px" height="350px" style="object-position: top;">
 
-
-     
-      
-      <!--CARROUSEL -->
-     <!--  <section class="carrousel d-flex justify-content-center">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide w-100 col-sm-8"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
           </div>
-          <div class="carousel-inner">
+        </section> -->
+
+        <section>
+          <div class="Bienvenida">
+            <p style="font-size: 25px;line-height: 1.2;color:rgb(38, 146, 38);letter-spacing: 2px;font-weight: 600; ">
+              Bienvenido a la Mutual Círculo de Suboficiales <br></p>
+            <p style="font-size: 20px;line-height: 1.2;color:rgb(38, 146, 38);letter-spacing: 2px;font-weight: 600; ">
+              Gendarmería Nacional</p>
+          </div>
+        </section>
+
+        <!--CARROUSEL -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner p-5 ">
+            <div class="carousel-item active">
+              <img src="/images/mesadirectiva.jpeg" height="300px">
+              <p>NUEVA JUNTA DIRECTIVA</p>
+            </div>
             <div class="carousel-item">
-              <a href="/filial" >
-                <img
-                src="/images/filiales/tacuarí.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-                <p>Conocé todas las Filiales</p></a>
-            </div> 
+              <img src="/images/Cañete2.jpeg" height="300px">
+              <P>PRESIDENTE SMY(R) PEDRO DANIEL CAÑETE</P>
+            </div>
             <div class="carousel-item">
-              <a href="/news/" >
-                <img
-                src="/images/carrousel/entrevista.jpeg"
-                style="width: 80%;margin: auto;"
-                alt="..."
-                />
-                <p>Entrevista al Presidente</p></a> 
-              </div>
-              <div class="carousel-item  active">
-                <a href="/news" >
-                 <img
-                  src="/images/carrousel/visitafilial.jpeg"
-                  style="width: 55%;margin: auto;"
-                  alt="..."
-                  />
-                  <p>Visita Filial Resistencia</p></a>
-               
-              </div> 
-              </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+              <img src="/images/filiales/tacuarí.jpg" height="300px">
+              <P>SEDE CENTRAL TACUARÍ 566</P>
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> 
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        
-      </section> -->
-
-        <!-- <div class="card-body1 row justify-content-around  p-3">
-          <div class="card col-md-4 mb-4"style="width: 75rem;">
-            
-            <img src="/images/carrousel/noticia3.jpg">
-           
-          </div>  -->
-
-
-    <!--       
+        <!--       
       <div class="noticias">
         <button  type="button" class="btn btn-success btn-sm" style=" border: none;" ><a href="/news/" style="color: aliceblue;font-size: 3rem;"> Ver todas las noticias</a> </button>
       </div> -->
 
-     <!-- 
+        <!-- 
       <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 75rem; background-color:#fced6a0a;">
           <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>
@@ -124,42 +78,154 @@
 
 
 
-        
-      
-       
 
+
+        <h2 style="font-size: 25px;">
+          ULTIMAS NOTICIAS
+        </h2>
 
         <div class="card-body1 row justify-content-around  p-3">
-          <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
-            <h2 style="background-color:rgb(38, 146, 38);color: white;">NUEVA COMISIÓN</h2>
-            <img src="/images/Cañete2.jpeg">
-            <img src="/images/mesadirectiva.jpeg">
-            <h4>
-              El pasado 13 de Junio se realizó la asamblea para la asunción de las nuevas autoridades de nuestra Mutual.
-              Presidida por el Suboficial Mayor (R) Pedro Daniel Cañete, las nuevas autoridades del Círculo de Suboficiales de Gendarmería llevaron adelante una reunión del Honorable Consejo Directivo. 
-            </h4>
-          </div> 
 
-          
-        <div class="card-body1 row justify-content-around  p-3">
+          <section>
+            <article class="" style="width: 75%;margin: auto;box-shadow: none;">
+              <style>
+                img {
+                  float: left;
+                }
+              </style>
+
+              <h2 style="background-color:var(--color-celeste);color: white;">IMPORTANTE</h2>
+                <p style="text-align: center;"><img src="/images/Cañete2.jpeg" alt="Pineapple" style="width:250px;height:250px;margin-right:15px;">
+                El pasado 13 de Junio se realizó la reunion para la asunción de las nuevas autoridades de nuestra Mutual.
+                Presidida por el Suboficial Mayor (R) Pedro Daniel Cañete, las nuevas autoridades del Círculo de Suboficiales de Gendarmería llevaron adelante una reunión del Honorable Consejo Directivo.</p>
+            </article>
+          </section>
+
+        </div>
+        <div class="elementor-row">
+          <section class="container">
+            <!--  empieza las cards -->
+            <section class="padre2">
+              <div class="container col-md-8 row text-center" style="margin:0 auto; padding-bottom: 3rem; ">
+               <!--  <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/formulario1" class="">
+                      <img src="/images/asociate.jpg" style="width: 220px;height: 130px;" class="card-img-top"
+                        alt="...">
+                    </a>
+                    <h4 class="card-text"><strong>Afiliación</strong></h4>
+                  </div>
+                </article>
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/wellness" class="" style="font-size:smaller; width: 80%; margin:auto;">
+                      <img src="/images/Bienestar-Social.jpg" class="card-img-top" style="width: 220px;height: 130px;"
+                        alt="..."></a>
+                    <h4><strong>Bienestar Social</strong></h4>
+                  </div>
+                </article> -->
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/news" class="" style="font-size:smaller; width: 75%; margin:auto;">
+                      <img src="/images/noticias5.jpg" class="card-img-top"
+                        style="width: 220px;height: 130px;margin-top: 4px; " alt="...">
+                    </a>
+                    <h4><strong>Noticias</strong></h4>
+
+                  </div>
+                </article>
+
+            </section>
+
+            <!-- <h3 style="padding-top: 2rem;" >
+          MÁS TRAMITES QUE PODES REALIZAR
+        </h3> -->
+
+        <!--     <section class="padre3">
+              <div class="container col-md-8 row text-center" style="margin:0 auto; padding-bottom: 3rem; ">
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__content">
+                    <a href="/tours" class="">
+                      <img src="/images/contactos/turismo.jpg" style="width: 100;;" class="card-img-top" alt="...">
+                    </a>
+                    <h4 class="card-text"><strong>Turismo</strong></h4>
+                  </div>
+                </article>
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/farmacias" class="">
+                      <img src="/images/farma.jpg" class="card-img-top" alt="..."></a>
+                    <h4><strong>Farmacia</strong></h4>
+                  </div>
+                </article>
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/recibos" class="" style="font-size:smaller; width: 75%; margin:auto;">
+                      <img src="/images/recibo.png" class="card-img-top" style="width: 220px;height: 130px;" alt="...">
+                    </a>
+                    <h4><strong>Recibos</strong></h4>
+
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="padre4">
+              <div class="container col-md-8 row text-center" style="margin:0 auto; padding-bottom: 3rem; ">
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__content">
+                    <a href="/filial" class="">
+                      <img src="/images/filial2.jpg" class="card-img-top" style="width: 220px;height: 130px;" alt="...">
+                    </a>
+                    <h4><strong>Filiales</strong></h4>
+                  </div>
+                </article>
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/evacuacion" class="">
+                      <img src="/images/evacuacion2.jpg" class="card-img-top" style="width: 220px;height: 130px;"
+                        alt="..."></a>
+                    <h4><strong>Evacuación</strong></h4>
+                  </div>
+                </article>
+                <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                  <div class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <a href="/subsidioSepelio" class="" style="font-size:smaller; width: 75%; margin:auto;">
+                      <img src="/images/sepelio.jpg" class="card-img-top" style="width: 220px;height: 130px;" alt="...">
+                    </a>
+                    <h4><strong>Subsidio por Sepelio</strong></h4>
+
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section> -->
+        </div>
+
+
+
+        <!--  <div class="card-body1 row justify-content-around  p-3">
           <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
             <h2 style="background-color:rgb(38, 146, 38);color: white;">IMPORTANTE</h2>
             <img src="/images/numeroCorrientes.jpeg">
-            <!-- <h4>
-             La Mutual Circulo de Suboficiales de Gendarmeria Nacional invita a los Socios/as, pensionados e invitados a la Gran Peña Folclórica a llevarse a cabo en las nuevas instalaciones del salón comedor a partir de las 22:00 hs.<br>
-             Reservas al 011-43423068, Whatsapp 11-3270-8855 o anticipadas en recepción de la Mutual. Habra servicio de Buffet.<br>
-             Lo recaudado será destinado a mejoras de las instalaciones de la Sede Central.
-            </h4> -->
-          </div> 
+          </div>  -->
 
 
 
-
-       
-
-
-        
-        <div class="card-body1 row justify-content-around  p-3">
+        <!--   <div class="card-body1 row justify-content-around  p-3">
           <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
             <h2 style="background-color:rgb(38, 146, 38);color: white;">ATENCIÓN</h2>
             <img src="/images/mendoza/imagen1.jpeg">
@@ -173,7 +239,7 @@
 
 
 
-        <!--   <div class="card-body1 row justify-content-around  p-3">
+        <--  <div class="card-body1 row justify-content-around  p-3">
             <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
               <h2 style="background-color:rgb(38, 146, 38);color: white;">IMPORTANTE</h2>
               <img src="/images/utedyc.jpeg">
@@ -182,8 +248,8 @@
              
              </h3>
             </div>  -->
-      
-<!-- 
+
+        <!-- 
       <h2 class="mt-5 p-5 ">Siguen las remodelaciones, se inaugura en <strong>Filial Córdoba</strong> dos nuevas habitaciones con todo el confort y modernidad que el socio merece. </h2>
 
       
@@ -216,7 +282,7 @@
         
       </div> -->
 
-     <!--  <div class="card-body1 row justify-content-around  p-3">
+        <!--  <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
           <h2 style="background-color:rgb(38, 146, 38);color: white;">IMPORTANTE</h2>
           <img src="/images/mardelplata.jpg">
@@ -236,7 +302,7 @@
 
 
 
-      <!-- <div class="card-body1 row justify-content-around  p-3">
+        <!-- <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
           <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>
           
@@ -251,7 +317,7 @@
         </div>  -->
 
 
-  <!--     <div class="card-body1 row justify-content-around  p-3">
+        <!--     <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
           <h2 style="background-color: red;color: white;font-weight: 700; ">URGENTE</h2>
           <h4>
@@ -264,7 +330,7 @@
           <button  type="button" class="btn btn-success btn-sm" style=" border: none;" ><a href="https://www.infobae.com/sociedad/policiales/2023/09/21/los-soldados-quedaron-aprisionados-como-fue-el-tragico-accidente-del-camion-del-ejercito-en-neuquen/" style="color: aliceblue;font-size: 2rem;">Click para más información</a> </button>
         </div>  -->
 
- <!-- 
+        <!-- 
      
       <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
@@ -292,7 +358,7 @@
           <button  type="button" class="btn btn-success btn-sm" style=" border: none;" ><a href="/festejo/" style="color: aliceblue;font-size: 2rem;"> Ver galeria</a> </button>
         </div>  -->
 
-<!-- 
+        <!-- 
       <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
           <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>
@@ -304,10 +370,10 @@
           </h4>
           
         </div>  -->
-      
-      
-     
-      <!-- <div class="card-body1 row justify-content-around  p-3">
+
+
+
+        <!-- <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
           <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>
           <img src="/images/fiesta/imagen1.jpeg">
@@ -331,22 +397,22 @@
           <img src="/images/Guemes.jpeg">
          
         </div>  -->
-      
-       <!--  <div class="card-body1 row justify-content-around  p-5">
+
+        <!--  <div class="card-body1 row justify-content-around  p-5">
           <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
               <h2><strong>Visita Filial Resistencia</strong></h2>
               <img src="/images/carrousel/visitafilial.jpeg"> -->
-              <!-- <h5>Con gran concurrencia de socios han sido invitados por la Comision Administradora de la Filial Resistencia los miembros del Organo Directivo de la Mutual Circulo se Sub Oficiales de GN encabezados por el Sub Oficial Mayor Jorge Morinigo a brindar una charla informativa sobre los alcances y logtos de la gestión vigente a nivel nacional. En dicha oportunidad se realizo un agasajo en el que primo la cordialidad y el respeto mutuo entre quienes hoy integran esta gran familia. Los Señores del Organo Directivo Jose Gonzalez y Damian Ponce hicieron entrega de premios y menciones a los  presentes posterior a sorteos y se comprometieron a seguir trabajando por el bienestar y el progreso de la Mutual tanto a nivel central donde hoy son visibles las innumerables mejoras como asi también a nivel filiales para beneficio de todos los asociados .</h5> -->
-             <!--  <a href="https://www.socialysolidaria.com/circulo-de-gendarmeria-y-su-modo-de-ver-al-mundo/" class="btn btn-success btn-sm"><h4 style="text-align: center;"><strong>Nota completa has click aquí</strong></h4></a> -->
-           <!--   <a href="/detailnews/1" class="btn btn-success d-grid gap-2"
+        <!-- <h5>Con gran concurrencia de socios han sido invitados por la Comision Administradora de la Filial Resistencia los miembros del Organo Directivo de la Mutual Circulo se Sub Oficiales de GN encabezados por el Sub Oficial Mayor Jorge Morinigo a brindar una charla informativa sobre los alcances y logtos de la gestión vigente a nivel nacional. En dicha oportunidad se realizo un agasajo en el que primo la cordialidad y el respeto mutuo entre quienes hoy integran esta gran familia. Los Señores del Organo Directivo Jose Gonzalez y Damian Ponce hicieron entrega de premios y menciones a los  presentes posterior a sorteos y se comprometieron a seguir trabajando por el bienestar y el progreso de la Mutual tanto a nivel central donde hoy son visibles las innumerables mejoras como asi también a nivel filiales para beneficio de todos los asociados .</h5> -->
+        <!--  <a href="https://www.socialysolidaria.com/circulo-de-gendarmeria-y-su-modo-de-ver-al-mundo/" class="btn btn-success btn-sm"><h4 style="text-align: center;"><strong>Nota completa has click aquí</strong></h4></a> -->
+        <!--   <a href="/detailnews/1" class="btn btn-success d-grid gap-2"
              style="font-size:smaller; width: 75%; margin-top:1rem; margin-left: auto;margin-right: auto; margin-bottom: 1rem;"><strong>Entérate
              más</strong></a>
             </div>
           </div>  -->
 
 
-          <!-- <h2 style="background-color: red;color: white;">SALUTACIÓN</h2>  -->
-          <!--  <h2>Reservas Hotel Mar del Plata</h2>
+        <!-- <h2 style="background-color: red;color: white;">SALUTACIÓN</h2>  -->
+        <!--  <h2>Reservas Hotel Mar del Plata</h2>
             <h5>A partir del <strong>Lunes 5 de Diciembre a las 9:00 AM</strong> se comenzará a tomar reservas. La solicitud de la reserva deberá enviarse por mail, <strong>único medio habilitado</strong>. Las reservas se tomarán por orden de requerimiento hasta agotar las plazas disponibles,<strong> sin excepción y las mismas solicitadas antes de la fecha y horario ya citado no se tendrán en cuenta</strong>. Gracias por su compresión y cooperación.
             </h5> -->
         <!--     
@@ -360,7 +426,7 @@
         </div>  -->
 
 
-      <!--   <div class="card-body1 row justify-content-around  p-3">
+        <!--   <div class="card-body1 row justify-content-around  p-3">
           <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
             <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>
             <img src="/images/9dejulio2.jpeg">
@@ -369,7 +435,7 @@
 
 
 
-          <!-- <div class="card-body1 row justify-content-around  p-3">
+        <!-- <div class="card-body1 row justify-content-around  p-3">
             <div class="card col-md-4 mb-4"style="width: 55rem; background-color:#fced6a0a;">
               <h2 style="background-color:rgb(38, 146, 38);color: white;">IMPORTANTE</h2>
               <img src="/images/resistencia.jpeg">
@@ -379,7 +445,7 @@
             </div>  -->
 
 
-<!-- 
+        <!-- 
         
         <div class="card-body1 row justify-content-around  p-3">
           <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
@@ -395,13 +461,13 @@
         </div> -->
 
 
-      <!--  
+        <!--  
         <div class="card-body1 row justify-content-around  p-3">
           <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
             <h2 style="background-color: red;color: white;">IMPORTANTE</h2> 
             <h2>Aclaración respecto a fiesta en sede Mutual </h2>
             <img src="/images/comuniSanta.jpeg"> -->
-            <!-- <h5>Llevamos a conocimiento las tareas realizadas por la gestión encabezada por el SMY
+        <!-- <h5>Llevamos a conocimiento las tareas realizadas por la gestión encabezada por el SMY
               ® LEGUIZAMON RAMON periodo de <strong> Gestión 2015 - 2019, Gestión 2019 – 2022</strong>,
               donde aspiramos demostrar los que acompañamos en las gestiones, que a pesar de
               las vicisitudes, las metas impuestas fueron concretadas en su gran mayoría, nos
@@ -410,22 +476,21 @@
               En el siguiente resumen pretendemos contarles lo desarrollado con el aporte de
               todos los socios.
             </h5> -->
-            </div>
-            </div>
-            <!-- 
+
+        <!-- 
           <a href="/images/Gestión.pdf" class="btn" download="Gestión.pdf"><h4 style="text-align: center;"><strong>Si desea descargar el informe haga click aquí</strong> </h4></a>
         </div> -->
-        
-       <!--  
+
+        <!--  
         <div class="card-body1 row justify-content-around  p-3 mt-5">
           <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
             <h2 style="background-color:rgb(38, 146, 38);color: white;">SALUTACIÓN</h2>  -->
-             <!-- <h5>El Órgano Directivo y la Junta de Fiscalización de la <strong>Mutual Circulo de Suboficiales de Gendarmeria Nacional</strong>,se complacen en hacerles llegar el más afectuoso saludo con motivo de conmemorarse hoy 30 de Agosto el <strong>71° Aniversario</strong> de nuestra Mutual.<br>Queremos hacerle llegar cordiales y respetuosas felicitaciones a todos los Suboficiales en Actividad, Retirados y Pensionadas/os y sus respectivas familias de la Entidad únicos y legítimos hacedores del crecimientode la Mutual.<br>Sin otro particular, encontramos propicia la oportunidad para saludarlos con mayor consideración y respeto.</h5> -->
-            <!--   <img src="/images/Tnavidad2-22.jpeg"/> -->
-              <!--  <button type="button" class="btn btn-success btn-sm" style="border: none;"><a href="/news/"  style="color: aliceblue;font-size: 3rem;"> Haz click</a> </button> -->
-         <!--  </div>
-        </div>  --> 
-          <div class="card-body1 row justify-content-around  p-5">
+        <!-- <h5>El Órgano Directivo y la Junta de Fiscalización de la <strong>Mutual Circulo de Suboficiales de Gendarmeria Nacional</strong>,se complacen en hacerles llegar el más afectuoso saludo con motivo de conmemorarse hoy 30 de Agosto el <strong>71° Aniversario</strong> de nuestra Mutual.<br>Queremos hacerle llegar cordiales y respetuosas felicitaciones a todos los Suboficiales en Actividad, Retirados y Pensionadas/os y sus respectivas familias de la Entidad únicos y legítimos hacedores del crecimientode la Mutual.<br>Sin otro particular, encontramos propicia la oportunidad para saludarlos con mayor consideración y respeto.</h5> -->
+        <!--   <img src="/images/Tnavidad2-22.jpeg"/> -->
+        <!--  <button type="button" class="btn btn-success btn-sm" style="border: none;"><a href="/news/"  style="color: aliceblue;font-size: 3rem;"> Haz click</a> </button> -->
+        <!--  </div>
+        </div>  -->
+        <!--    <div class="card-body1 row justify-content-around  p-5">
             <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
               <h2 style="background-color: red;color: white;font-weight: 700; ">IMPORTANTE</h2>
                <h2><strong>Recepción de Hotel</strong></h2>
@@ -435,39 +500,39 @@
                 <img src="/images/logo-wasap.png" width="50" height="50" class="logo-wasap">
               </a>
               </div>
-            </div> 
+            </div>  -->
 
-         
 
-      <!--  <div class="card-body1 row justify-content-around  p-5">
+
+        <!--  <div class="card-body1 row justify-content-around  p-5">
         <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
           <h2 style="background-color: red;color: white;">IMPORTANTE</h2><br>
            <h2>Se reactivan las ayudas económicas</h2>
            <h5>Siguiendo la CF 43, 52 y 57/21, nos dirigimos a Uds. para informar que luego gestiones realizadas entre el Órgano Directiva y Entidad Bancaria, a partir del día de la fecha se reactivan las ayudas económicas para los Asociados Titulares en situación de actividad ante Gendarmería Nacional, con la misma metodología aplicada para el personal en situación de retiro o pensión. Para mayor información, los interesados deberán comunicarse al correo electrónico: <strong>ayuda.economica@cirsubgn.org</strong>, o bien, a los teléfonos <strong>11-3242-3843</strong>, <strong>11-2189-7557</strong>, de lunes a viernes de 9 a 16hs.<br>
             Solicitamos ampliar difusión del presente.</h5>
            -->
-         <!--  <img src="/images/comunicado.jpeg"/> -->
-         <!--  <a href="/images/comunicado.jpeg" class="btn" download="comunicado.jpeg"><h4 style="text-align: center;"><strong>Si desea descargar el memo haga click aquí</strong> </h4></a> -->
+        <!--  <img src="/images/comunicado.jpeg"/> -->
+        <!--  <a href="/images/comunicado.jpeg" class="btn" download="comunicado.jpeg"><h4 style="text-align: center;"><strong>Si desea descargar el memo haga click aquí</strong> </h4></a> -->
         <!--   <embed src="/images/directiva.pdf#navpanes=0&scrollbar=0&zoom=60" type="application/pdf" width="100%" height="400px"/>
         </div> -->
-    <!--   </div> -->  
-  
-     <!--   <div class="card-body1 row justify-content-around  p-3">
+        <!--   </div> -->
+
+        <!--   <div class="card-body1 row justify-content-around  p-3">
         <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
           <h2 style="background-color: red;color: white;">COMUNICADO URGENTE</h2> 
           <h2>IOSFA reanuda prestaciones</h2>
            <h5>Nos dirigimos a ustedes para dar conocimiento sobre el resultado de la gestión que realizó el órgano directivo ante las autoridades de IOSFA, les queremos comunicar que a partir del dia 15 de Julio del corriente dicha obra social procedio a <strong>reanudar la prestación</strong> en farmacia propias a nuestros asociados.</h5>
            <a href="/images/emailiosfa.PDF" class="btn" download="emailiosfa.PDF"><h4 style="text-align: center;"><strong>Si desea descargar el memo haga click aquí</strong> </h4></a> -->
-           <!-- <video autoplay controls>
+        <!-- <video autoplay controls>
               <source src="/images/himno.mp4" type="video/mp4">
             </video>
             <h3 class="mt-3">Video viral de <strong>Gendarmería Nacional</strong> en las redes en honor al Himno Nacional. </h3>
           </div>
  -->
 
-           <!--  <img src="/images/9julio.jpeg">  --> 
-            <!-- <h3>SALUTACIÓN</h3> -->
-                  <!-- <h4 style="text-align: center;"><strong>Como toda fecha grande de la patria, los argentinos entendemos
+        <!--  <img src="/images/9julio.jpeg">  -->
+        <!-- <h3>SALUTACIÓN</h3> -->
+        <!-- <h4 style="text-align: center;"><strong>Como toda fecha grande de la patria, los argentinos entendemos
                     que, celebrarlas supone reafirmar nuestras tradiciones, ratificando
                     una vez más nuestra verdadera identidad y nuestros valores, que
                     supieron reflejar próceres como el San Martín, Brown, Güemes y
@@ -483,34 +548,36 @@
                     cumplir, como así también para transmitir ese legado a las futuras
                     generaciones.
                     </strong> </h4>  -->
-                <!--  <img src="/images/carrousel/1mayo.jpeg"/> -->
-                <!--  <embed src="/images/obra-social.PDF#navpanes=0&scrollbar=0&zoom=60" type="application/pdf" width="100%" height="400px"/> -->
-      <!--   </div>
+        <!--  <img src="/images/carrousel/1mayo.jpeg"/> -->
+        <!--  <embed src="/images/obra-social.PDF#navpanes=0&scrollbar=0&zoom=60" type="application/pdf" width="100%" height="400px"/> -->
+        <!--   </div>
       </div>  -->
 
-    </div>
-<script type="text/javascript">
-  (function () {
-      var options = {
-          whatsapp: "+54 9 11 76429930", // WhatsApp number
-          call_to_action: "Necesitas ayuda?", // Call to action
-          position: "right", // Position may be 'right' or 'left'
-      };
-      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-  })();
-</script>
-<!-- /GetButton.io widget -->
+        </div>
+
+       <!--  WhatsApp -->
+       <!--  <script type="text/javascript">
+          (function () {
+            var options = {
+              whatsapp: "+54 9 11 76429930", // WhatsApp number
+              call_to_action: "Necesitas ayuda?", // Call to action
+              position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+          })();
+        </script> -->
+        <!-- /GetButton.io widget -->
 
 
-     
-    <div class="quejas">
-      <a href="/tramites/#alta" class="btn btn-success">Dejanos tu opinión</a>
-    </div>
 
-<!-- 
+    <!--     <div class="quejas">
+          <a href="/tramites/#alta" class="btn btn-success">Dejanos tu opinión</a>
+        </div> -->
+
+        <!-- 
     <div class="card-asociate row justify-content-around mt-5 p-5" >
       
       <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
@@ -540,7 +607,11 @@
       </div>
     </div> -->
 
-    <section class="padre2">
+
+
+
+
+        <!-- <section class="padre2">
       <div class="container col-md-12 row text-center" style="margin:0 auto">
         <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
           <div class="card__image">
@@ -621,8 +692,8 @@
             <a href="/filial" class="btn btn-success d-grid gap-2"
             style="font-size:smaller; width: 75%; margin:auto;"><strong>Ver más</strong></a>
           </div>
-        </article>
-       <!--  <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+        </article> -->
+        <!--  <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
           <div class="card__image">
             <img src="/images/sorteo.jpg" class="card-img-top" alt="...">
           </div>
@@ -633,7 +704,7 @@
               style="font-size:smaller; width: 75%; margin:auto;">Ver más</a>
           </div>
         </article> -->
-        <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+        <!--     <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
           <div class="card__image">
             <img src="/images/evacuacion2.jpg" class="card-img-top" alt="...">
           </div>
@@ -645,24 +716,23 @@
           </div>
         </article>
       </div>
-    </section>
+    </section> -->
 
-    <div class="card-body1 row justify-content-around  p-5">
-      <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
-        <h3 >
-         <strong>En caso de Fallecimiento </strong>
-       <img src="/images/sepelios2.jpg"
-       class="d-block w-100"
-       alt="..."/>
-       <h3>
-        <strong>estamos con vos...</strong>
-       </h3>
-       
-      <a href="/tramites/#sepelio" class="btn btn-success d-grid gap-2 mb-2" style="font-size:smaller; width: 75%; margin:auto;" ><strong>Haz clic</strong></a>
-      </div>
-    </div>
-    
-  <!--   
+        <!-- <div class="card-body1 row justify-content-around  p-5">
+          <div class="card col-md-4 mb-4" style="width: 45rem; background-color:#fced6a0a;">
+            <h3>
+              <strong>En caso de Fallecimiento </strong>
+              <img src="/images/sepelios2.jpg" class="d-block w-100" alt="..." />
+              <h3>
+                <strong>estamos con vos...</strong>
+              </h3>
+
+              <a href="/tramites/#sepelio" class="btn btn-success d-grid gap-2 mb-2"
+                style="font-size:smaller; width: 75%; margin:auto;"><strong>Haz clic</strong></a>
+          </div>
+        </div> -->
+
+        <!--   
      <div class="card-asociate row justify-content-around mt-5 p-5" >
       
       <div class="card col-md-4 mb-4"style="width: 45rem; background-color:#fced6a0a;">
@@ -711,19 +781,20 @@
         </div>
       </div>
     </div> -->
-     
-    
 
-    </div>
-  
-    </main>
 
-    <!-- Footer -->
-    <%- include('partials/footer.ejs')%>
-    <!-- Footer -->
 
-    <!-- SCRIPTS -->
-    <%- include('partials/scripts.ejs')%>
-      
+        </div>
+
+      </main>
+
+      <!-- Footer -->
+      <%- include('partials/footer.ejs')%>
+        <!-- Footer -->
+
+        <!-- SCRIPTS -->
+        <%- include('partials/scripts.ejs')%>
+
   </body>
-</html>
+
+  </html>

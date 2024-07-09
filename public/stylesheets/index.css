@@ -31,24 +31,11 @@ p {
   
 }
 
-.padre2 .container .card{
-  width: 30%;
-}
-
-@media (max-width: 576px){
-
-.card .embed {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 1rem;
-  width: 100%;
-  
-}
 
 
 .padre2 .container{
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: space-between;
   width: 80%;
 }
@@ -59,7 +46,48 @@ p {
    padding-right: 0.5rem;
    
 }
+
+.padre3 .container{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 80%;
 }
+
+.padre3 .container .card{
+   width: 100%;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   
+}
+
+.padre4 .container{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.padre4 .container .card{
+   width: 100%;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   
+}
+
+
+@media (max-width: 576px){
+
+.card .embed {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  width: 100%;
+  
+}
+}
+
+
 
 .quejas{
   position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
@@ -89,7 +117,7 @@ p {
 .carrousel {
   display: none;
  /*  border-style: double; */
-  width: 60%;
+  width: 66%;
   position: relative;
   margin: auto;
 }
@@ -197,14 +225,23 @@ p {
   }
   
  
-  .padre .container .card{
+/*   .padre .container .card{
     width:28%;
     padding-bottom: 2rem;
     
+} */
+.padre2 .container .card{
+  width:180px;
+  
+}
+.padre3 .container .card{
+  width:180px;
+}
+.padre4 .container .card{
+  width:180px;
 }
 
-
-.padre .container .card h3{
+/* .padre .container .card h3{
     color: #32A455
 }
 .padre .container .card h3:hover{
@@ -213,7 +250,7 @@ p {
 .padre .container .card a:hover{
     color:#32A455
 }
-  
+   */
 
 .header-nav-links{
   justify-content: space-evenly;

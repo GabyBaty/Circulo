@@ -1,3 +1,7 @@
+.turismo2 .card{
+  width: 45%;
+}
+
 @media (max-width: 576px){
 
     .card-body{

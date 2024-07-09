@@ -14,3 +14,17 @@
 
      <!-- Captcha  -->
      <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+
+     <script>
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector(' .header52');
+    header.classList.toggle("small", window.scrollY > 0);
+  });
+</script>   <!-- funcion para achicar el header -->
+
+<script>
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector('.logo-container img');
+    header.classList.toggle("small", window.scrollY > 0);
+  });
+</script>

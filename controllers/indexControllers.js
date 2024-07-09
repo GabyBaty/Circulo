@@ -113,5 +113,49 @@ module.exports = {
             title: 'CIRCULO-ACTUALIZACION'
         })
     },
-   
+    contable:(req,res)=> {
+        return res.render ('asesoramientoContable',{
+            title: 'CIRCULO-ASESORAMIENTO CONTABLE'
+        })
+    },
+    juridico:(req,res)=> {
+        return res.render ('asesoramientoJuridico',{
+            title: 'CIRCULO-ASESORAMIENTO JURIDICO'
+        })
+    },
+    bodas:(req,res)=> {
+        return res.render ('bodasOro',{
+            title: 'CIRCULO-BODAS DE ORO'
+        })
+    },
+    casamiento:(req,res)=> {
+        return res.render ('casamientos',{
+            title: 'CIRCULO-CASAMIENTO'
+        })
+    },
+    hijos:(req,res)=> {
+        return res.render ('subsidioHijos',{
+            title: 'CIRCULO-SUBSIDIO POR HIJOS'
+        })
+    },
+    sepelio:(req,res)=> {
+        return res.render ('subsidioSepelio',{
+            title: 'CIRCULO-SUBSIDIO POR SEPELIO'
+        })
+    },
+    institucion:(req,res)=> {
+        return res.render ('institucional',{
+            title: 'CIRCULO-INSTITUCIONAL'
+        })
+    },
+    autoridad:(req,res)=> {
+        return res.render ('autoridades',{
+            title: 'CIRCULO-AUTORIDADES'
+        })
+    },
+    recibo:(req,res)=> {
+        return res.render ('recibos',{
+            title: 'CIRCULO-RECIBOS'
+        })
+    },
 }

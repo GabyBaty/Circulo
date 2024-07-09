@@ -20,7 +20,23 @@
 .about .container2 {
     display: flex;
     align-self: center;
+
+    
 }
+
+.card{
+    box-shadow: 7px 13px 37px var(--color-negro)
+  }
+  .about .container .card {
+    padding:0.9rem;
+  }
+  .about .container2 .container .card{
+    padding: 1.3rem;
+  }
+  
+  .about .elementor-row {
+    padding: 1rem;
+  }
 
 @media (max-width: 576px){
     .container2 {

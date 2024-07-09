@@ -33,6 +33,15 @@ var riogallegosRouter = require('./routes/riogallegos');
 var formularioRouter = require('./routes/formulario');
 var altafamiliarRouter = require('./routes/altafamiliar');
 var actualizacionesRouter = require('./routes/actualizaciones');
+var contableRouter = require('./routes/contable');
+var juridicoRouter = require('./routes/juridico');
+var bodasRouter = require('./routes/bodas');
+var casamientoRouter = require('./routes/casamiento');
+var hijosRouter = require('./routes/hijos');
+var sepelioRouter = require('./routes/sepelio');
+var institucionRouter = require('./routes/institucion');
+var autoridadRouter = require('./routes/autoridad');
+var reciboRouter = require('./routes/recibo');
 var cors = require('cors');
  
 
@@ -78,6 +87,15 @@ app.use('/riogallegosF',riogallegosRouter);
 app.use('/formulario1',formularioRouter);
 app.use('/altaFamiliar',altafamiliarRouter);
 app.use('/actualizacionD',actualizacionesRouter);
+app.use('/asesoramientoContable',contableRouter);
+app.use('/asesoramientoJuridico',juridicoRouter);
+app.use('/bodasOro',bodasRouter);
+app.use('/casamientos',casamientoRouter);
+app.use('/subsidioHijos',hijosRouter);
+app.use('/subsidioSepelio',sepelioRouter);
+app.use('/institucional',institucionRouter);
+app.use('/autoridades',autoridadRouter);
+app.use('/recibos',reciboRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -96,3 +114,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
