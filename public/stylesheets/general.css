@@ -483,6 +483,9 @@ header {
     justify-content:center;
     
   }
+  .logo-container img {
+    display: none;
+  }
 }
 
 .padre2 .container .card{
