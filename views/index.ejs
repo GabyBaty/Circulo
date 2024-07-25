@@ -7,7 +7,7 @@
       <main style="padding-top: 1rem;">
         <!--Botón ir hacia arriba-->
 
-    <!--     <section>
+        <!--     <section>
           <div class="card-body">
 
             <img src="/images/filiales/tacuarí.jpg" width="1400px" height="350px" style="object-position: top;">
@@ -77,8 +77,16 @@
         </div>  -->
 
 
+        <!-- ventana modal -->
+        <div id="popup" class="popup" style="display: none;">
+         <!--  <h2>¡Bienvenido!</h2> -->
+           <img src="/images/hotelcatedral.jpeg">
+           <br>
+          <!-- <p>Promoción exclusiva para Asociados</p> -->
+          <button onclick="cerrarVentanaEmergente()">Cerrar</button>
+        </div>
 
-
+        <!-- fin de ventana -->
 
         <h2 style="font-size: 25px;">
           ULTIMAS NOTICIAS
@@ -95,6 +103,28 @@
               </style>
 
               <h2 style="background-color:var(--color-celeste);color: white;">IMPORTANTE</h2>
+                <p style="font-size: 14px;"><img src="/images/entradafiesta.jpeg" class="entrada" alt="Pineapple" style="width:380px;margin-right:15px;"onclick="hacerCrecer(this)">
+                  Estimados socios,<br>
+                  Tenemos el placer de invitarlos a la cena con motivo del <strong>86º aniversario de Gendarmería Nacional</strong>. Será un evento significativo para nuestra institución, y nos gustaría contar con la grata presencia de todos ustedes.<br>
+                  <strong>Fecha</strong> : 03 de agosto de 2024.<br>
+                 <strong>Hora</strong> : 20:30 HS.<br>
+                 <strong>Lugar</strong>  : Sede Central de la Mutual Circulo de Gendarmería Nacional.<br>
+                 <strong>Dirección</strong> : Tacuarí 566, CABA.<br>
+                  Agradecemos confirmar su asistencia, el valor del menú es de diez mil pesos ($10.000,00.-)<strong>SIN BEBIDA</strong>.<br>
+                  Para mayor información te podes comunicar al whatsapp: <a href="tel:1132708855" class="telefono">(11) 3270-8855</a> o escribirnos al siguiente correo <a href="mailto:protocolo@cirsubgn.org">protocolo@cirsubgn.org</a> <br>
+                  Medio de pago: Efectivo/transferencia.</p>
+            </article>
+          </section>
+
+          <section style="padding-top: 25px;">
+            <article class="" style="width: 75%;margin: auto;box-shadow: none;">
+              <style>
+                img {
+                  float: left;
+                }
+              </style>
+
+              <h2 style="background-color:var(--color-celeste);color: white;">IMPORTANTE</h2>
                 <p style="text-align: center;"><img src="/images/Cañete2.jpeg" alt="Pineapple" style="width:250px;height:250px;margin-right:15px;">
                 El pasado 13 de Junio se realizó la reunion para la asunción de las nuevas autoridades de nuestra Mutual.
                 Presidida por el Suboficial Mayor (R) Pedro Daniel Cañete, las nuevas autoridades del Círculo de Suboficiales de Gendarmería llevaron adelante una reunión del Honorable Consejo Directivo.</p>
@@ -103,7 +133,7 @@
 
         </div>
 
-   <!--      <div class="card-body1 row justify-content-around  p-3">
+        <!--      <div class="card-body1 row justify-content-around  p-3">
 
           <section>
             <article class="" style="width: 75%; margin: auto;box-shadow: none;">
@@ -121,7 +151,7 @@
             <!--  empieza las cards -->
             <section class="padre2">
               <div class="container col-md-8 row text-center" style="margin:0 auto; padding-bottom: 3rem; ">
-               <!--  <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
+                <!--  <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
                   <div class="card__image">
                   </div>
                   <div class="card__content">
@@ -161,7 +191,7 @@
           MÁS TRAMITES QUE PODES REALIZAR
         </h3> -->
 
-        <!--     <section class="padre3">
+            <!--     <section class="padre3">
               <div class="container col-md-8 row text-center" style="margin:0 auto; padding-bottom: 3rem; ">
                 <article class="card mt-5 justify-content-center" style="border-radius: 10px; margin: 0 auto;">
                   <div class="card__content">
@@ -569,8 +599,8 @@
 
         </div>
 
-       <!--  WhatsApp -->
-       <!--  <script type="text/javascript">
+        <!--  WhatsApp -->
+        <!--  <script type="text/javascript">
           (function () {
             var options = {
               whatsapp: "+54 9 11 76429930", // WhatsApp number
@@ -587,7 +617,7 @@
 
 
 
-    <!--     <div class="quejas">
+        <!--     <div class="quejas">
           <a href="/tramites/#alta" class="btn btn-success">Dejanos tu opinión</a>
         </div> -->
 
@@ -809,6 +839,27 @@
         <!-- SCRIPTS -->
         <%- include('partials/scripts.ejs')%>
 
+        <script>
+          // Función para mostrar la ventana emergente después de cierto tiempo
+          function mostrarVentanaEmergente() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+          }
+          // Función para cerrar la ventana emergente
+          function cerrarVentanaEmergente() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+          }
+
+          // Mostrar la ventana emergente después de 5 segundos (5000 milisegundos)
+          setTimeout(mostrarVentanaEmergente, 5000);
+        </script>
+
+        <script>
+          function hacerCrecer(elemento) {
+            elemento.classList.toggle('clicked');
+          }
+        </script>
   </body>
 
   </html>

@@ -75,6 +75,14 @@ p {
    
 }
 
+.entrada{
+  transition: transform 0.3s ease-in-out;
+}
+
+.entrada.clicked{
+  transform: scale(1.5); /* Escala al 150% */
+}
+
 
 @media (max-width: 576px){
 

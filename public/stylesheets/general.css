@@ -47,6 +47,36 @@ body {
   padding-top: 0.5rem;
 }
  */
+
+ .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none; /* Inicialmente oculto */
+  text-align: center;
+  width: 400px;
+  
+}
+.popup img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+.popup button {
+  padding: 5px 5px;
+  background-color: #1a7e4c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -323,6 +353,8 @@ header {
 }
 
 
+
+
 @media (max-width: 900px) {
 /*   .hamburger-menu-container {
     display: flex;
@@ -497,6 +529,7 @@ header {
 .padre4 .container .card{
   width: 30%;
 }
+
 
 
 /* ---------------FOOTER--------------------- */
