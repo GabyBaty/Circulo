@@ -1,6 +1,18 @@
-[   
+[  
     {
         "id": 1,
+        "name": "Extensión Universitaria Internacional y visita de la Embajadora del Paraguay",
+        "date": "16/08/2024",
+        "autor": "por Martín Nahuel Pianelli",
+        "articulo": {
+            "p": [
+                "Pensando en un Círculo Dinámico, Proactivo y centrado su accionar en el Socio en que, también orientamos nuestras acciones en la Extensión universitaria para la transferencia tecnolólica y del conocimiento, la vinculación con e medio y con los siguientes objetivos conductores: Fortalecer el vínculo y la comunicación con el entorno social, educativo y empresarial para contribuir a la solución de problemas del contexto social y favorecer la participación activa de socios, docentes y alumnos en el análisis y solución de problemas del entorno, ofreciendo actividades de extensión, transferencia y formación continua, vinculándose a proyectos de asesoría educativa, consultoría académica y técnica, externa y especializada. En este contexto el día viernes 16 de Agosto pasado, estuvimos participando de un proyecto de Extención Universitaria para 300 alumnos de Ciencias Económicas de la República del Paraguay, en una serie de conferencias magistrales realizadas en el Auditorio del Hotel Tacuarí, sito en Tacuarí 566 del barrio porteño de San Telmo. Cabe mencionar, que la serie de actividades realizadas en el marco de este proyecto de extensión universitaria se inició el día jueves 15 de agosto, en la Facultad de Ciencias Económicas de la Universidad de Buenos Aires (UBA), donde fueron por el Decano de la institucuón Prof. Dr. Ricardo J.M. Pahlen y la Directora de Postgrado Prof. Mag. Ana M. Campo. En nuestra sede se realizaron una serie de actividades consistentes en la recepción de los alumnos universitarios, sus Rectores y 20 Docentes, encabezando la Delegación el Director de Filiales Prof. Mag. Jorge Cáseres Colman y con la presencia de la Embajadora de la República del Paraguay en Argentina, Dra. Helena Felip Salazar."
+            ]
+        },
+        "images": "embajadora.jpeg"
+    },  
+    {
+        "id": 2,
         "name": "Aclaración respecto a fiesta en sede Mutual",
         "date": "03/07/2023",
         "autor": "por Martín Nahuel Pianelli",
@@ -13,7 +25,7 @@
     }, 
 
     {
-        "id": 1,
+        "id": 3,
         "name": "Visita Filial Resistencia ",
         "date": "12/05/2023",
         "autor": "por Martín Nahuel Pianelli",
@@ -25,7 +37,7 @@
         "images": "visitafilial.jpeg"
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Despide su gestión ",
         "date": "08/04/2023",
         "autor": "por Martín Nahuel Pianelli",
@@ -37,7 +49,7 @@
         "images": "entrada.jpeg"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Entrevista al Presidente, portal Social y Solidaria ",
         "date": "08/04/2023",
         "autor": "por Martín Nahuel Pianelli",
@@ -49,7 +61,7 @@
         "images": "entrevista.jpeg"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Historia de nuestra Mutual ",
         "date": "30/08/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -61,7 +73,7 @@
         "images": "71Anivesario.jpeg"
     },
     {
-        "id": 5,
+        "id": 7,
         "name": "Se reactivan las ayudas económicas ",
         "date": "24/05/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -73,7 +85,7 @@
         "images": "comunicado.jpeg"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Circular-IOSFA ",
         "date": "07/04/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -85,7 +97,7 @@
         "images": "iofa.jpeg"
     },
     {
-        "id": 7,
+        "id": 9,
         "name": "10 de Marzo Feliz Aniversario ",
         "date": "10/03/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -97,7 +109,7 @@
         "images": "aniversario.jpeg"
     },
     {
-        "id": 8,
+        "id": 10,
         "name": "Renovación con 'Sol Naciente'",
         "date": "25/02/2022",
         "autor": "por Martín Nahuel Pianelli",
@@ -109,7 +121,7 @@
         "images": "Renovacion.png"
     },
     {
-        "id": 9,
+        "id": 11,
         "name": "Los 100 de Don Esteban Oscar Lopez",
         "date": "22/12/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -121,7 +133,7 @@
         "images": "los100.jpg"
     },
     {
-        "id": 10,
+        "id": 12,
         "name": "Elecciones Generales para Delegados y Subdelegados",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -133,7 +145,7 @@
         "images": "elecciones2021.png"
     },
     {
-        "id": 11,
+        "id": 13,
         "name": "Solicite ahora su Ayuda Económica",
         "date": "12/10/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -145,7 +157,7 @@
         "images": "Ayuda-economica.png"
     },
     {
-        "id": 12,
+        "id": 14,
         "name": "Remodelación del EDIFICIO HOTEL TACUARÍ",
         "date": "27/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -157,7 +169,7 @@
         "images": "remodelacion.png"
     },
     {
-        "id": 13,
+        "id": 15,
         "name": "Asamblea Ordinaria de Delegados",
         "date": "23/09/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -169,7 +181,7 @@
         "images": "noticia1.jpg"
     },
     {
-        "id": 14,
+        "id": 16,
         "name": "Apoyo del Círculo de Suboficiales a un socio que competirá en Japón",
         "date": "25/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -181,7 +193,7 @@
         "images": "noticia2.jpg"
     },
     {
-        "id": 15,
+        "id": 17,
         "name": "Reencuentro en Sede Central",
         "date": "09/08/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -193,7 +205,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 16,
+        "id": 18,
         "name": "Vacaciones de invierno en Córdoba",
         "date": "27/07/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -205,7 +217,7 @@
         "images": "vacaciones.png"
     },
     {
-        "id": 17,
+        "id": 19,
         "name": "Alojamiento Sede Central",
         "date": "08/03/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -217,7 +229,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 18,
+        "id": 20,
         "name": "Trabajo de prevención tras el sismo en San Juan",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -229,7 +241,7 @@
         "images": "sismoSanJuan.png"
     },
     {
-        "id": 19,
+        "id": 21,
         "name": "Detienen a joven que viajaba con un arma de fuego casera",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -241,7 +253,7 @@
         "images": "Detencion.png"
     },
     {
-        "id": 20,
+        "id": 22,
         "name": "Secuestran casi 4 toneladas de marihuana abandonada entre la maleza",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -253,7 +265,7 @@
         "images": "marihuana.png"
     },
     {
-        "id": 21,
+        "id": 23,
         "name": "Reparación del frente del Edificio Sede Central",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -265,7 +277,7 @@
         "images": "noticia3.jpg"
     },
     {
-        "id": 22,
+        "id": 24,
         "name": "Hospedaje para la temporada 2020/2021 en Mar del Plata",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -277,7 +289,7 @@
         "images": "hospedajeMP2021.png"
     },
     {
-        "id": 23,
+        "id": 25,
         "name": "Nos equipamos para recibirlos pronto",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -289,7 +301,7 @@
         "images": "equipocovid.png"
     },
     {
-        "id": 24,
+        "id": 26,
         "name": "Trasladaba 7 kilos de cocaína en el tanque de nafta",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -301,7 +313,7 @@
         "images": "cocaina.png"
     },
     {
-        "id": 25,
+        "id": 27,
         "name": "Detienen a clan familiar con toneladas de droga",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -313,7 +325,7 @@
         "images": "clanfamiliar.png"
     },
     {
-        "id": 26,
+        "id": 28,
         "name": "Donación de ropa y alimentos en Formosa",
         "date": "01/02/2021",
         "autor": "por Martín Nahuel Pianelli",
@@ -325,7 +337,7 @@
         "images": "donacion.png"
     },
     {
-        "id": 27,
+        "id": 29,
         "name": "Miles de dólares y celulares",
         "date": "09/09/2021",
         "autor": "por Martín Nahuel Pianelli",
