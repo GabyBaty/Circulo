@@ -137,6 +137,30 @@ p {
 }
 
 
+/* style de los videos */
+
+.vista {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.column {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+video{
+  width: 390px;
+  margin-top: 20px;
+}
+
+
+/* fin */
+
 
 @media (min-width: 768px) {
   .carrousel {
